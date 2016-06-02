@@ -1,0 +1,23 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.foot_bar ul{
+	height: 30px;
+	margin: 0 auto;
+}
+.foot_bar li{
+	margin: 0 auto;
+	float: left;
+	height: 30px;
+	list-style-type: none;
+	text-align: center;
+	
+}
+.foot_bar li div{
+	margin-top: 3px;
+}
+.foot-container{
+	margin: 0 auto;
+}
