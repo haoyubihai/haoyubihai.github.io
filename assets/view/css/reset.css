@@ -1,0 +1,7 @@
+@charset "UTF-8";
+/* CSS Document */
+[class *= col-]{
+  background-color: #eee;
+  border: 1px solid #ccc;
+}
+
