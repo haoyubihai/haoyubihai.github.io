@@ -6,9 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>创业云商</title>   
   <!-- Bootstrap -->
-    <link href="../../bootstrap/css/bootstrap.min.css" rel="stylesheet"
+  <link href="../../bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <!--你自己的样式文件 -->
-  <link rel="stylesheet" type="text/css" href="../../rrc/css/main.css">      
+  <link rel="stylesheet" type="text/css" href="../../rrc/css/main.css">
+  <script type="text/javascript" src="../../rrc/js/pageload.js"></script>
   <!-- 以下两个插件用于在IE8以及以下版本浏览器支持HTML5元素和媒体查询，如果不需要用可以移除 -->
         <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -17,41 +18,66 @@
       </head>
       <body>
 
+        <!-- 轮播图开始 -->
+        <div class="container">
+          <div class="carousel slide shop-carousel" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#id-shop-carousel" data-slide-to="0" class="active"></li>
+              <li data-target="#id-shop-carousel" data-slide-to="1"></li>
+              <li data-target="#id-shop-carousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <a href="#"><img src="../images/ad-03.jpg" alt="..."></a>
+              </div>
+              <div class="item">
+                <a href="#"><img src="../images/ad-01.jpg" alt="..."></a>
+              </div>
+              <div class="item">
+                <a href="#"><img src="../images/ad-02.jpg" alt="..."></a>
+              </div>
+            </div>
+          </div>
+        </div>
 
-
+        <!-- 底部开始 -->
         <div class="foot">
           <nav class="navbar navbar-default nav-tabs nav-justified navbar-fixed-bottom">
            <div class="container container-fluid">
             <div class="row">
-            <div class="col-xs-3 col-md-3 foot-bar-div activenow">
+              <div class="col-xs-3 col-md-3 foot-bar-div activenow">
                 <a  class="glyphicon glyphicon-home " href="#">
                  <div>主页</div></a>
-            </div>
-            <div class="col-xs-3 col-md-3 foot-bar-div">
+               </div>
+               <div class="col-xs-3 col-md-3 foot-bar-div">
                 <a  class="glyphicon glyphicon-gift " href="../shop/shop.html">
                   <div>商城</div></a>
-            </div>
-            <div class="col-xs-3 col-md-3 foot-bar-div">
+                </div>
+                <div class="col-xs-3 col-md-3 foot-bar-div">
                  <a  class="glyphicon glyphicon-blackboard " href="../learn/learn.html">
                   <div>学堂</div></a>
-            </div>
-               <div class="col-xs-3 col-md-3 foot-bar-div">
+                </div>
+                <div class="col-xs-3 col-md-3 foot-bar-div">
                  <a  class="glyphicon glyphicon-shopping-cart " href="../shopcar/shopcar.html">
                   <div>购物车</div></a>
-            </div>
-            <div class="col-xs-3 col-md-3 foot-bar-div">
+                </div>
+                <div class="col-xs-3 col-md-3 foot-bar-div">
                  <a  class="glyphicon glyphicon-user " href="../user/user.html">
                   <div>我的</div></a>
-            </div>
+                </div>
               </div>
             </div>
           </nav>
 
         </div>
-              <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
-<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
 
-<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
-<script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js">
-      </body>
-      </html>
+        <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+        <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+
+        <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+        <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js">
+
+
+        </body>
+        </html>
