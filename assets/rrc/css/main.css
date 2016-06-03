@@ -42,7 +42,7 @@
 
 /*footer*/
 .foot{
-	height: 30px;
+	height: 25px;
 
 }
 .foot-bar-div{
@@ -56,6 +56,7 @@
 .foot-bar-div a{
 	padding-top: 5px;
 	text-decoration: none;
+	font-size: 14px;
 }
 .activenow{
 	background-color: #487FE7;
