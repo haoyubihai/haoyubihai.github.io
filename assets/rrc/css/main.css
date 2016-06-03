@@ -41,21 +41,38 @@
 
 
 /*footer*/
-.foot_bar ul{
+.foot{
 	height: 30px;
 
 }
-.foot_bar li{
-	margin: 0 auto;
-	float: left;
-	height: 30px;
-	list-style-type: none;
+.foot-bar-div{
+	width: 20%;
+	line-height: 30px;
 	text-align: center;
-	
 }
-.foot_bar li div{
-	margin-top: 3px;
+.foot-bar-div div{
+	margin-top: 5px;
 }
-.foot-container{
-	margin: 0 auto;
+.foot-bar-div a{
+	padding-top: 5px;
+	text-decoration: none;
 }
+.activenow{
+	background-color: #487FE7;
+
+}
+.activenow a{
+	color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
