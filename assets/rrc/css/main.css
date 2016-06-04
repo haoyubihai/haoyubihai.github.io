@@ -41,6 +41,7 @@ body {
 /*搜索*/
 .search{
 	margin: 5px 12px; 
+	background: #F0F0F5;
 }
 .search-text{
 	color: #fff;
@@ -126,7 +127,7 @@ body {
 	padding-top: 5px;
 	text-decoration: none;
 	font-size: 14px;
-	color: #9A9A9A;
+	color: #EEEEEE;
 }
 .activenow a{
 	color: #0850D0;
