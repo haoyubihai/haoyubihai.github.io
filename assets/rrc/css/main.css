@@ -90,23 +90,22 @@ padding: 8px;
 }
 
 .item-container h3{
-	font-size: 18px;
+	font-size: 14px;
 	padding-left: 5px;
 	margin-top: 5px;
 }
 .item-time{
 	margin-left: 7px;
-	padding-top: 8px;
-	line-height: 20px;
+	padding-top: 5px;
+	line-height: 14px;
 	color: #C5C5C5;
-	font-size: 16px
+	font-size: 12px
 }
 .item-summary{
-	line-height: 23px;
-	margin-top: 2px;
+	line-height: 18px;
 	padding: 5px;
 	color: #6C6C6C;
-	font-size: 18px;
+	font-size: 14px;
 }
 /*footer*/
 .foot{
