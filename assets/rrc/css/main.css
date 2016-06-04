@@ -38,6 +38,9 @@ table {
 body {
 	-webkit-text-size-adjust: none;
 }
+.wrap{
+	padding-bottom: 50px;
+}
 /*搜索*/
 .search{
 	margin: 5px 12px; 
