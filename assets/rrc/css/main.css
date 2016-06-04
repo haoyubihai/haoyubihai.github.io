@@ -76,7 +76,7 @@ body {
 	margin-top: 8px;
 }
 .item-container{
-	margin: 8px;
+	margin-top: 8px;
 }
 .item-container li{
 	border-bottom:  solid 1px #cecece;
@@ -85,7 +85,7 @@ body {
 	float: left;
 	width: 100%;
 	height: 80px;
-	margin-right: 8px;
+	margin: 8px;
 
 }
 .item-left{
