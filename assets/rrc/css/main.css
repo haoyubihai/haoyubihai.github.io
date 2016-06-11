@@ -347,9 +347,9 @@ body {
 .center{
 	background-color: #fff;
 	margin-top: 15px;
-	border:solid 1px #DBDBDB;
-	margin-left: -1px;
-	margin-right: -1px;
+	
+	border-top: solid 1px #DBDBDB;
+
 }
 .mine_other{
 	padding-bottom: 70px;
