@@ -48,6 +48,7 @@ body {
 .card_title{
 	padding-bottom:5px;
 	font-size: 16px;
+	color: #2D2D2D;
 }
 .t_desc{
 	color: #999999;
@@ -88,7 +89,12 @@ body {
 	height: 50px;
 
 }
+.weui_btn_plain_primary_i{
+	margin: 10px;
+	color: #E23A3A;
 
+	border: solid 1px #0850D0;
+}
 /*卡片布局*/
 
 /*footer*/
@@ -234,6 +240,11 @@ body {
 	height: 48px;
 	margin: 0 auto;
 }
+.gird_item_icon_res img{
+	height: 73px;
+	width: 117px;
+	margin: 0 auto;
+}
 .gird_item_icon img{
 
 	width: 48px;
@@ -359,5 +370,18 @@ body {
 	color: #2C2C2C;
 	padding: 18px 15px;
 
+}
+
+.next{
+	margin: 10px;
+}
+/*项目申请*/
+.p_info{
+	text-align: center;
+	padding: 10px;
+	margin-top: 8dp;
+	font-size: 17px;
+	margin: 0 auto;
+	color: #44B70A ;
 }
 
