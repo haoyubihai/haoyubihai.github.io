@@ -32,11 +32,13 @@ body {
 	-webkit-text-size-adjust: none;
 }
 .wraper{
-	position: absolute;
+
 	padding-bottom: 80px;
 }
 
-
+.wrap{
+	background-color: #EFEFEF;
+}
 
 /*搜索*/
 .search-box{
@@ -299,5 +301,66 @@ body {
 	color: #E4393C;
 	font-size: 10px;
 	font-size: 12px;
+}
+/*我的*/
+.u_head{
+	height: 113px;
+	background-color: #3083FB;
+	text-align: center;
+}
+.u_head .user_head{
+	margin-top: 17px;
+	margin-left: 12px;
+	margin-bottom: 6px;
+	margin-right: 12px;
+	width: 60px;
+	height: 60px;
+	border-radius: 60px;
+	
+}
+.weui-row .account_btn{
+	margin-left: 12px;
+	width: 60px;
+	border:solid 1px #fff;
+	padding: 2px;
+	color: #fff;
+	font-size: 11px;
+	text-align: center;
+}
+.user_info{
+	height: 60px;
+	text-align: left;
+	margin-top: 28px;
+	font-size: 12px;
+	color: #fff;
+	padding: 2px;
+}
+.user_info .account_num{
+
+margin-bottom: 8px;
+}
+.user_info .level{
+margin-right: 10px;
+color: #FB160C;
+}
+.user_info .point{
+	color: #FAED2D;
+	font-size: 14px;
+}
+.center{
+	background-color: #fff;
+	margin-top: 15px;
+	border:solid 1px #DBDBDB;
+	margin-left: -1px;
+	margin-right: -1px;
+}
+.mine_other{
+	padding-bottom: 70px;
+}
+.c_title {
+font-size: 14px;
+color: #2C2C2C;
+padding: 18px 15px;
+
 }
 

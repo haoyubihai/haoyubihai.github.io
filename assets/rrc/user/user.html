@@ -17,42 +17,266 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
       </head>
+
       <body>
-        <div class="foot">
-          <nav class="navbar navbar-default nav-tabs nav-justified navbar-fixed-bottom">
-           <div class="container container-fluid">
-            <div class="row">
-              <div class="col-xs-3 col-md-3 foot-bar-div ">
-                <a  class="glyphicon glyphicon-home " href="../home/home.html">
-                 <div>主页</div></a>
-               </div>
-               <div class="col-xs-3 col-md-3 foot-bar-div">
-                <a  class="glyphicon glyphicon-gift " href="../shop/shop.html">
-                  <div>商城</div></a>
-                </div>
-                <div class="col-xs-3 col-md-3 foot-bar-div ">
-                 <a  class="glyphicon glyphicon-blackboard " href="../learn/learn.html">
-                  <div>学堂</div></a>
-                </div>
-                <div class="col-xs-3 col-md-3 foot-bar-div">
-                 <a  class="glyphicon glyphicon-shopping-cart " href="../shopcar/shopcar.html">
-                  <div>购物车</div></a>
-                </div>
-                <div class="col-xs-3 col-md-3 foot-bar-div activenow">
-                 <a  class="glyphicon glyphicon-user " href="#">
-                  <div>我的</div></a>
-                </div>
-              </div>
+       <div class="wrap"> 
+         <!-- 头部 -->
+         <div class="u_head">
+
+           <div class="weui-row">
+             <div class="weui-col-20">
+              <div> <img class="user_head" src="../images/1.jpg"></img></div>
+
+              <div class="account_btn">账号管理</div>
+
             </div>
-          </nav>
+            <div class="weui-col-80">
+             <div class="user_info">
+               <div class="account_num">lucy</div>
+               <div class="account_info">
+                 <span class="level">金牌会员</span>
+                 <span class="point_card">积分：<span class="point">1000</span></span>
+               </div>
+             </div>
+           </div>
 
+         </div>
+       </div>
+       <!-- 消费中心 -->
+       <div class="consume_center center">
+        <div class="c_title">
+          消费中心
         </div>
-        
 
-        <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
-        <script src="../../bootstrap/js/jquery-1.12.4.min.js"></script>
- <script src="../../jquery-weui/js/jquery-weui.js"></script>
-        <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
-        <script src="../../bootstrap/js/bootstrap.min.js"></script>
-      </body>
-      </html>
+        <div class="weui_grids gird_categry">
+          <a href="#" class="weui_grid js_grid" data-id="button">
+            <div class="gird_item_icon">
+              <img src="../images/1.jpg" alt="">
+            </div>
+            <p class="weui_grid_label">
+              全部订单
+            </p>
+          </a>
+          <a href="#" class="weui_grid js_grid" data-id="cell">
+            <div class="gird_item_icon">
+              <img src="../images/2.jpg"  alt="">
+            </div>
+            <p class="weui_grid_label">
+              待付款
+            </p>
+          </a>
+          <a href="#" class="weui_grid js_grid" data-id="cell">
+            <div class="gird_item_icon">
+              <img src="../images/3.jpg"  alt="">
+            </div>
+            <p class="weui_grid_label">
+              待收货
+            </p>
+          </a>
+          <a href="#" class="weui_grid js_grid" data-id="toast">
+            <div class="gird_item_icon">
+              <img src="../images/4.jpg"  alt="">
+            </div>
+            <p class="weui_grid_label">
+             待评价
+           </p>
+         </a>
+         <a href="#" class="weui_grid js_grid" data-id="dialog">
+          <div class="gird_item_icon">
+            <img src="../images/5.jpg"  alt="">
+          </div>
+          <p class="weui_grid_label">
+            消费记录
+          </p>
+        </a>
+        <a href="#" class="weui_grid js_grid" data-id="progress">
+          <div class="gird_item_icon">
+            <img src="../images/6.jpg"  alt="">
+          </div>
+          <p class="weui_grid_label">
+           消费统计
+         </p>
+       </a>
+
+     </div>
+   </div>
+   <!-- 销售中心 -->
+   <div class="sale_center center">
+     <div class="c_title">
+     销售中心
+    </div>
+
+    <div class="weui_grids gird_categry">
+      <a href="#" class="weui_grid js_grid" data-id="button">
+        <div class="gird_item_icon">
+          <img src="../images/1.jpg" alt="">
+        </div>
+        <p class="weui_grid_label">
+          销售订单
+        </p>
+      </a>
+      <a href="#" class="weui_grid js_grid" data-id="cell">
+        <div class="gird_item_icon">
+          <img src="../images/2.jpg"  alt="">
+        </div>
+        <p class="weui_grid_label">
+          产品销售记录
+        </p>
+      </a>
+      <a href="#" class="weui_grid js_grid" data-id="cell">
+        <div class="gird_item_icon">
+          <img src="../images/3.jpg"  alt="">
+        </div>
+        <p class="weui_grid_label">
+          销售情况统计
+        </p>
+      </a>
+    
+
+ </div>
+</div>
+<!-- 项目中心 -->
+<div class="project_center center">
+ <div class="c_title">
+  项目中心
+</div>
+
+<div class="weui_grids gird_categry">
+  <a href="#" class="weui_grid js_grid" data-id="button">
+    <div class="gird_item_icon">
+      <img src="../images/1.jpg" alt="">
+    </div>
+    <p class="weui_grid_label">
+      我的项目
+    </p>
+  </a>
+  <a href="#" class="weui_grid js_grid" data-id="cell">
+    <div class="gird_item_icon">
+      <img src="../images/2.jpg"  alt="">
+    </div>
+    <p class="weui_grid_label">
+      商家维护
+    </p>
+  </a>
+  <a href="#" class="weui_grid js_grid" data-id="cell">
+    <div class="gird_item_icon">
+      <img src="../images/3.jpg"  alt="">
+    </div>
+    <p class="weui_grid_label">
+     产品管理
+    </p>
+  </a>
+  
+
+</div>
+</div>
+<!-- 财务管理 -->
+<div class="financing center">
+ <div class="c_title">
+  财务管理
+</div>
+
+<div class="weui_grids gird_categry">
+  <a href="#" class="weui_grid js_grid" data-id="button">
+    <div class="gird_item_icon">
+      <img src="../images/1.jpg" alt="">
+    </div>
+    <p class="weui_grid_label">
+     我的小金库
+    </p>
+  </a>
+  <a href="#" class="weui_grid js_grid" data-id="cell">
+    <div class="gird_item_icon">
+      <img src="../images/2.jpg"  alt="">
+    </div>
+    <p class="weui_grid_label">
+     收益情况统计
+    </p>
+  </a>
+  <a href="#" class="weui_grid js_grid" data-id="cell">
+    <div class="gird_item_icon">
+      <img src="../images/3.jpg"  alt="">
+    </div>
+    <p class="weui_grid_label">
+     收益记录查询
+    </p>
+  </a>
+  <a href="#" class="weui_grid js_grid" data-id="toast">
+    <div class="gird_item_icon">
+      <img src="../images/4.jpg"  alt="">
+    </div>
+    <p class="weui_grid_label">
+     我的积分
+   </p>
+ </a>
+ <a href="#" class="weui_grid js_grid" data-id="dialog">
+  <div class="gird_item_icon">
+    <img src="../images/5.jpg"  alt="">
+  </div>
+  <p class="weui_grid_label">
+    积分查询
+  </p>
+</a>
+
+
+</div>
+</div>
+<!-- 其它 -->
+<div class="mine_other">
+  <div class="weui_cells">
+  <div class="weui_cell">
+    <div class="weui_cell_bd weui_cell_primary">
+      <p>我的收藏</p>
+    </div>
+  </div>
+  <div class="weui_cell">
+    <div class="weui_cell_bd weui_cell_primary">
+      <p>我的好友</p>
+    </div>
+  </div>
+  <div class="weui_cell">
+    <div class="weui_cell_bd weui_cell_primary">
+      <p>帮助中心</p>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<div class="foot">
+  <nav class="navbar navbar-default nav-tabs nav-justified navbar-fixed-bottom">
+   <div class="container container-fluid">
+    <div class="row">
+      <div class="col-xs-3 col-md-3 foot-bar-div ">
+        <a  class="glyphicon glyphicon-home " href="../home/home.html">
+         <div>主页</div></a>
+       </div>
+       <div class="col-xs-3 col-md-3 foot-bar-div">
+        <a  class="glyphicon glyphicon-gift " href="../shop/shop.html">
+          <div>商城</div></a>
+        </div>
+        <div class="col-xs-3 col-md-3 foot-bar-div ">
+         <a  class="glyphicon glyphicon-blackboard " href="../learn/learn.html">
+          <div>学堂</div></a>
+        </div>
+        <div class="col-xs-3 col-md-3 foot-bar-div">
+         <a  class="glyphicon glyphicon-shopping-cart " href="../shopcar/shopcar.html">
+          <div>购物车</div></a>
+        </div>
+        <div class="col-xs-3 col-md-3 foot-bar-div activenow">
+         <a  class="glyphicon glyphicon-user " href="#">
+          <div>我的</div></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+</div>
+
+
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="../../bootstrap/js/jquery-1.12.4.min.js"></script>
+<script src="../../jquery-weui/js/jquery-weui.js"></script>
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="../../bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
