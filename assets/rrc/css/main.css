@@ -45,6 +45,20 @@ body {
 	background: #F0F0F5;
 	padding: 5px 12px;
 }
+.card_title{
+	padding-bottom:5px;
+	font-size: 16px;
+}
+.t_desc{
+	color: #999999;
+	font-size: 13px;
+	line-height: 1.5;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+}
 .search{
 	
 	
@@ -76,52 +90,7 @@ body {
 }
 
 /*卡片布局*/
-.newadd{
-	margin-top: 8px;
-}
-.item-container{
-	margin-top: 5px;
-}
-.item-container li{
-	border-bottom:  solid 1px #cecece;
-}
-.card-item img{
-	float: left;
-	width: 100%;
-	height: 80px;
-	margin-right: 8px;
-	
-}
-.list-item{
-	margin: 5px 0;
-}
-.item-left{
-	float: left;
-	width: 30%;
-}
-.item-right{
-	float: left;
-	width: 70%;
-}
 
-.item-container h3{
-	font-size: 14px;
-	padding-left: 5px;
-	margin-top: 5px;
-}
-.item-time{
-	margin-left: 7px;
-	padding-top: 5px;
-	line-height: 14px;
-	color: #C5C5C5;
-	font-size: 12px
-}
-.item-summary{
-	line-height: 18px;
-	padding: 5px;
-	color: #6C6C6C;
-	font-size: 14px;
-}
 /*footer*/
 .foot{
 	height: 20px;
@@ -146,13 +115,21 @@ body {
 }
 
 /*shop*/
-.s-left-item li {
-	list-style-type: none;
-	line-height: 45px;
-	width: 85px;
-	background: #F0F0F5;
-	border-bottom: 1px solid #DDDDDD;
+.list_title{
+	font-size: 13px;
 
+}
+
+.left_area{
+
+	float: left;
+	background-color: #EDEDED;
+}
+.right_area{
+	float: right;
+}
+.s-left-item{
+	background-color: #DDDDDD;
 }
 .s-left-item li a{
 	line-height: 45px;
@@ -225,10 +202,27 @@ body {
 	width: 100%;
 	height: 100%;
 }
+.weui_grids_i{
+	position: relative;
+	overflow: hidden;
+	margin: -1px -1px;
+}
+.weui_grid_i{
+	
+	position: relative;
+	float: left;
+	padding: 20px 10px;
+	width: 33.33333333%;
+	background-color: #EDEDED;
+	border:solid 1px #fff;
 
+}
+.content-detail{
+	padding-right: 10px;
+}
 /*学堂*/
 .gird_categry{
-	margin-top: 8px;
+	margin-top: 0px;
 }
 .gird_item_icon{
 	width: 48px;
@@ -252,9 +246,7 @@ body {
 	margin-top: 8px;
 }
 
-.t_desc{
-	margin-top: 5px;
-}
+
 
 /*购物车*/
 .top_show{
@@ -337,11 +329,11 @@ body {
 }
 .user_info .account_num{
 
-margin-bottom: 8px;
+	margin-bottom: 8px;
 }
 .user_info .level{
-margin-right: 10px;
-color: #FB160C;
+	margin-right: 10px;
+	color: #FB160C;
 }
 .user_info .point{
 	color: #FAED2D;
@@ -358,9 +350,9 @@ color: #FB160C;
 	padding-bottom: 70px;
 }
 .c_title {
-font-size: 14px;
-color: #2C2C2C;
-padding: 18px 15px;
+	font-size: 14px;
+	color: #2C2C2C;
+	padding: 18px 15px;
 
 }
 
