@@ -39,6 +39,19 @@ body {
 .wrap{
 	background-color: #EFEFEF;
 }
+.reset_padding{
+	padding: 0;
+}
+.reset_margin{
+	margin: 0;
+}
+.reset{
+	padding: 0px;
+	margin: 0px;
+	margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+}
 
 /*搜索*/
 .search-box{
@@ -384,4 +397,150 @@ body {
 	margin: 0 auto;
 	color: #44B70A ;
 }
+/*商品信息*/
+
+.good_info{
+	background-color: #fff;
+	padding: 10px;
+	
+}
+.good_info h4{
+	font-size: 16px;
+	
+}
+.cuxiao_img{
+	height: 50px;
+	width: 100%;
+}
+.right_collect {
+	text-align: center;
+	border-left: solid 1px #DADADA;
+}
+.right_collect img{
+	width: 16px;
+	height: 16px;
+}
+.right_collect .text_collect{
+	font-size: 11px;
+	padding-top: 2px;
+}
+.price_area{
+	background-color: #FCF4F2;
+	height: 50px;
+	padding:0 10px;
+	margin-top: 15px;
+
+}
+.price_area .text_price{
+	color: #E83A3B;
+	float: left;
+	font-size: 9px;
+	line-height: 50px;
+}
+.price_area .price_num{
+	font-size: 18px;
+	font-weight: bold;
+}
+.price_area .comment{
+	float: right;
+	font-size: 12px;
+	color: #B4B5B9;
+	line-height: 50px;
+}
+
+.shop_icon_area .shop_icon{
+width: 90px;
+height: 30px;
+margin: 10px;
+border: solid 1px #DBDBDB;
+}
+.shop_icon_area .icon_area{
+	width: 110px;
+	float: left;
+}
+.shop_icon_area .shop_title{
+	float: left;
+	margin-top: 10px;
+}
+.shop_icon_area .shop_title_h{
+	font-size: 14px;
+	color: #2B2B2B;
+	
+}
+.shop_icon_area .shop_title_d{
+	font-size: 12px;
+	color: #989898;
+	
+}
+.shop_info_area{
+	padding-bottom: 10px;
+}
+.shop_info_area .fannum{
+
+font-size: 14px;
+font-weight: bold;
+color: #2E2E2E;
+}
+.shop_info_area .text_fans{
+	font-size: 12px;
+	color: #999999;
+}
+.center_item{
+	text-align: center;
+}
+.line_left{
+	border-left: solid 1px #DBDBDB;
+}
+.shop_deal{
+	padding: 10px;
+}
+.shop_deal .shop_btn{
+	font-size: 12px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.goods_wrap{
+	background-color: #E7E8EC;
+}
+.cate_ul li{
+	padding: 10px;
+	color: #303030;
+	text-align: center;
+	font-size: 12px;
+	border: solid 1px #DCDCDC;
+	float: left;
+margin-right: 10px;
+margin-bottom: 10px;
+}
+.cate_ul li a{
+	color: #303030;
+	font-style: none;
+}
+.cate_ul .cate_li_active{
+	border: solid 1px #C61503;	
+
+}
+.comment_total{
+	
+	font-size: 12px;
+	color: #999999;
+}
+
+.comment_time{
+	float: right;
+	font-size: 12px;
+	color: #999999;
+}
+
+.seeall{
+	text-align: center;
+	padding: 10px;
+}
+.good_detail {
+margin-top: 15px;
+}
+
+
+
+
 
