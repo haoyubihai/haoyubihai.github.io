@@ -23,11 +23,19 @@
 
 
           <!-- 搜索 -->
-          <div class="search-box">
-            <div class="input-group search">
-              <input type="text" class="form-control" placeholder="京味烤鱼">
-              <span class="input-group-addon search-text">搜索</span>
-            </div>
+          <div class="weui_search_bar" id="search_bar">
+            <form class="weui_search_outer">
+              <div class="weui_search_inner">
+                <i class="weui_icon_search"></i>
+                <input type="search" class="weui_search_input" id="search_input" placeholder="搜索" required/>
+                <a href="javascript:" class="weui_icon_clear" id="search_clear"></a>
+              </div>
+              <label for="search_input" class="weui_search_text" id="search_text">
+                <i class="weui_icon_search"></i>
+                <span>搜索</span>
+              </label>
+            </form>
+            <a href="javascript:" class="weui_search_cancel" id="search_cancel">取消</a>
           </div>
           <!-- 轮播图开始 -->
           <div class="container">
@@ -52,119 +60,119 @@
             </div>
           </div>
           <div class="apply_container">
-             <a href="apply.html" class="weui_btn weui_btn_plain_primary_i">项目申请</a>
+           <a href="apply.html" class="weui_btn weui_btn_plain_primary_i">项目申请</a>
+         </div>
+         <!-- 最新项目 -->
+         <div class="weui_panel weui_panel_access">
+          <div class="weui_panel_hd">新添项目</div>
+          <div class="weui_panel_bd">
+            <a href="javascript:void(0);" class="weui_media_box weui_media_appmsg">
+              <div class="weui_media_hd">
+                <img class="weui_media_appmsg_thumb" src="../images/1.jpg" alt="">
+              </div>
+              <div class="weui_media_bd">
+                <h4 class="card_title">滇池的上空</h4>
+                <p class="t_desc ">中评社台北5月5日电 （记者倪鸿祥）马英九政府在520卸任前积极主张、强化南海主权，今天上午执行“南安专案”，邀请前“行政院长”郝柏村、毛治国。</p>
+              </div>
+            </a>
+            <a href="javascript:void(0);" class="weui_media_box weui_media_appmsg">
+              <div class="weui_media_hd">
+                <img class="weui_media_appmsg_thumb" src="../images/2.jpg" alt="">
+              </div>
+              <div class="weui_media_bd">
+                <h4 class="card_title">过桥米线</h4>
+                <p class="t_desc">今天傍晚结束行程返台后，马英九在“总统府”内设接风宴，与郝柏村等人交换登岛心得并听取建言。</p>
+              </div>
+            </a>
+            <a href="javascript:void(0);" class="weui_media_box weui_media_appmsg">
+              <div class="weui_media_hd">
+                <img class="weui_media_appmsg_thumb" src="../images/3.jpg" alt="">
+              </div>
+              <div class="weui_media_bd">
+                <h4 class="card_title card_title">新疆大盘鸡</h4>
+                <p class="t_desc">今天傍晚结束行程返台后，马英九在“总统府”内设接风宴，与郝柏村等人交换登岛心得并听取建言。</p>
+              </div>
+            </a>
           </div>
-          <!-- 最新项目 -->
-          <div class="weui_panel weui_panel_access">
-            <div class="weui_panel_hd">新添项目</div>
-            <div class="weui_panel_bd">
-              <a href="javascript:void(0);" class="weui_media_box weui_media_appmsg">
-                <div class="weui_media_hd">
-                  <img class="weui_media_appmsg_thumb" src="../images/1.jpg" alt="">
-                </div>
-                <div class="weui_media_bd">
-                  <h4 class="card_title">滇池的上空</h4>
-                  <p class="t_desc ">中评社台北5月5日电 （记者倪鸿祥）马英九政府在520卸任前积极主张、强化南海主权，今天上午执行“南安专案”，邀请前“行政院长”郝柏村、毛治国。</p>
-                </div>
-              </a>
-              <a href="javascript:void(0);" class="weui_media_box weui_media_appmsg">
-                <div class="weui_media_hd">
-                  <img class="weui_media_appmsg_thumb" src="../images/2.jpg" alt="">
-                </div>
-                <div class="weui_media_bd">
-                  <h4 class="card_title">过桥米线</h4>
-                  <p class="t_desc">今天傍晚结束行程返台后，马英九在“总统府”内设接风宴，与郝柏村等人交换登岛心得并听取建言。</p>
-                </div>
-              </a>
-              <a href="javascript:void(0);" class="weui_media_box weui_media_appmsg">
-                <div class="weui_media_hd">
-                  <img class="weui_media_appmsg_thumb" src="../images/3.jpg" alt="">
-                </div>
-                <div class="weui_media_bd">
-                  <h4 class="card_title card_title">新疆大盘鸡</h4>
-                  <p class="t_desc">今天傍晚结束行程返台后，马英九在“总统府”内设接风宴，与郝柏村等人交换登岛心得并听取建言。</p>
-                </div>
-              </a>
-            </div>
-            <a class="weui_panel_ft" href="javascript:void(0);">查看更多</a>
+          <a class="weui_panel_ft" href="javascript:void(0);">查看更多</a>
+        </div>
+        <!-- 新添项目 -->
+        <div class="weui_panel weui_panel_access">
+          <div class="weui_panel_hd">最新项目</div>
+          <div class="weui_panel_bd">
+            <a href="javascript:void(0);" class="weui_media_box weui_media_appmsg">
+              <div class="weui_media_hd">
+                <img class="weui_media_appmsg_thumb" src="../images/4.jpg" alt="">
+              </div>
+              <div class="weui_media_bd">
+                <h4 class="card_title">粽子大集合</h4>
+                <p class="t_desc ">中评社台北5月5日电 （记者倪鸿祥）马英九政府在520卸任前积极主张、强化南海主权，今天上午执行“南安专案”，邀请前“行政院长”郝柏村、毛治国。</p>
+              </div>
+            </a>
+            <a href="javascript:void(0);" class="weui_media_box weui_media_appmsg">
+              <div class="weui_media_hd">
+                <img class="weui_media_appmsg_thumb" src="../images/5.jpg" alt="">
+              </div>
+              <div class="weui_media_bd">
+                <h4 class="card_title">和合谷糕点</h4>
+                <p class="t_desc">今天傍晚结束行程返台后，马英九在“总统府”内设接风宴，与郝柏村等人交换登岛心得并听取建言。</p>
+              </div>
+            </a>
+            <a href="javascript:void(0);" class="weui_media_box weui_media_appmsg">
+              <div class="weui_media_hd">
+                <img class="weui_media_appmsg_thumb" src="../images/6.jpg" alt="">
+              </div>
+              <div class="weui_media_bd">
+                <h4 class="card_title">全聚德烤鸭</h4>
+                <p class="t_desc">今天傍晚结束行程返台后，马英九在“总统府”内设接风宴，与郝柏村等人交换登岛心得并听取建言。</p>
+              </div>
+            </a>
           </div>
-          <!-- 新添项目 -->
-          <div class="weui_panel weui_panel_access">
-            <div class="weui_panel_hd">最新项目</div>
-            <div class="weui_panel_bd">
-              <a href="javascript:void(0);" class="weui_media_box weui_media_appmsg">
-                <div class="weui_media_hd">
-                  <img class="weui_media_appmsg_thumb" src="../images/4.jpg" alt="">
-                </div>
-                <div class="weui_media_bd">
-                  <h4 class="card_title">粽子大集合</h4>
-                  <p class="t_desc ">中评社台北5月5日电 （记者倪鸿祥）马英九政府在520卸任前积极主张、强化南海主权，今天上午执行“南安专案”，邀请前“行政院长”郝柏村、毛治国。</p>
-                </div>
-              </a>
-              <a href="javascript:void(0);" class="weui_media_box weui_media_appmsg">
-                <div class="weui_media_hd">
-                  <img class="weui_media_appmsg_thumb" src="../images/5.jpg" alt="">
-                </div>
-                <div class="weui_media_bd">
-                  <h4 class="card_title">和合谷糕点</h4>
-                  <p class="t_desc">今天傍晚结束行程返台后，马英九在“总统府”内设接风宴，与郝柏村等人交换登岛心得并听取建言。</p>
-                </div>
-              </a>
-              <a href="javascript:void(0);" class="weui_media_box weui_media_appmsg">
-                <div class="weui_media_hd">
-                  <img class="weui_media_appmsg_thumb" src="../images/6.jpg" alt="">
-                </div>
-                <div class="weui_media_bd">
-                  <h4 class="card_title">全聚德烤鸭</h4>
-                  <p class="t_desc">今天傍晚结束行程返台后，马英九在“总统府”内设接风宴，与郝柏村等人交换登岛心得并听取建言。</p>
-                </div>
-              </a>
-            </div>
-            <a class="weui_panel_ft" href="javascript:void(0);">查看更多</a>
-          </div>
-
-
+          <a class="weui_panel_ft" href="javascript:void(0);">查看更多</a>
         </div>
 
 
-        <!-- 底部开始 -->
-        <div class="foot">
-          <nav class="navbar navbar-default nav-tabs nav-justified navbar-fixed-bottom">
-           <div class="container container-fluid">
-            <div class="row">
-              <div class="col-xs-3 col-md-3 foot-bar-div activenow">
-                <a  class="glyphicon glyphicon-home " href="#">
-                 <div>主页</div></a>
-               </div>
-               <div class="col-xs-3 col-md-3 foot-bar-div">
-                <a  class="glyphicon glyphicon-gift " href="../shop/shop.html">
-                  <div>商城</div></a>
-                </div>
-                <div class="col-xs-3 col-md-3 foot-bar-div">
-                 <a  class="glyphicon glyphicon-blackboard " href="../learn/learn.html">
-                  <div>学堂</div></a>
-                </div>
-                <div class="col-xs-3 col-md-3 foot-bar-div">
-                 <a  class="glyphicon glyphicon-shopping-cart " href="../shopcar/shopcar.html">
-                  <div>购物车</div></a>
-                </div>
-                <div class="col-xs-3 col-md-3 foot-bar-div">
-                 <a  class="glyphicon glyphicon-user " href="../user/user.html">
-                  <div>我的</div></a>
-                </div>
+      </div>
+
+
+      <!-- 底部开始 -->
+      <div class="foot">
+        <nav class="navbar navbar-default nav-tabs nav-justified navbar-fixed-bottom">
+         <div class="container container-fluid">
+          <div class="row">
+            <div class="col-xs-3 col-md-3 foot-bar-div activenow">
+              <a  class="glyphicon glyphicon-home " href="#">
+               <div>主页</div></a>
+             </div>
+             <div class="col-xs-3 col-md-3 foot-bar-div">
+              <a  class="glyphicon glyphicon-gift " href="../shop/shop.html">
+                <div>商城</div></a>
+              </div>
+              <div class="col-xs-3 col-md-3 foot-bar-div">
+               <a  class="glyphicon glyphicon-blackboard " href="../learn/learn.html">
+                <div>学堂</div></a>
+              </div>
+              <div class="col-xs-3 col-md-3 foot-bar-div">
+               <a  class="glyphicon glyphicon-shopping-cart " href="../shopcar/shopcar.html">
+                <div>购物车</div></a>
+              </div>
+              <div class="col-xs-3 col-md-3 foot-bar-div">
+               <a  class="glyphicon glyphicon-user " href="../user/user.html">
+                <div>我的</div></a>
               </div>
             </div>
-          </nav>
+          </div>
+        </nav>
 
-        </div>
+      </div>
 
-        <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
-        <script src="../../bootstrap/js/jquery-1.12.4.min.js"></script>
-        <script src="../../jquery-weui/js/jquery-weui.js"></script>
-        <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
-        <script src="../../bootstrap/js/bootstrap.min.js"></script>
-       
-        <script type="text/javascript" src="../../rrc/js/pageload.js"></script>
+      <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+      <script src="../../bootstrap/js/jquery-1.12.4.min.js"></script>
+      <script src="../../jquery-weui/js/jquery-weui.js"></script>
+      <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+      <script src="../../bootstrap/js/bootstrap.min.js"></script>
+      
+      <script type="text/javascript" src="../../rrc/js/pageload.js"></script>
 
-      </body>
-      </html>
+    </body>
+    </html>

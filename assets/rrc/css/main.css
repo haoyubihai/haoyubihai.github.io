@@ -139,9 +139,12 @@ body {
 	font-size: 13px;
 
 }
-
+.shop_left{
+	position: relative;
+}
 .left_area{
 
+position: absolute;
 	float: left;
 	background-color: #EDEDED;
 }
@@ -242,6 +245,7 @@ body {
 
 }
 .content-detail{
+	position: relative;
 	padding-right: 10px;
 }
 /*学堂*/
@@ -593,10 +597,43 @@ line-height: 48px;
 	background-color: #E23A39;
 } 
 
+/*商品列表 搜索*/
+.arrow_down{
+	margin-left: 5px;
+	margin-top: 3px;
+}
+.item_price {
+	padding-bottom: 5px;
+}
+.item_price .s_price{
+	font-size: 12px;
+	color: #E23A39;
+	padding: 5px;
+}
+ .item_price .s_price_down{
+color: #ffffff;
+padding: 3px;
+font-size: 11px;
+background-color: #E23A39;
+}
+.good_icon_lay{
+	overflow:hidden;
+}
+.item_icon{
+	width: 100%;
+	height: 100%;
 
-
-
-
+}
+.goods_title{
+	font-size: 13px;
+	line-height: 16px;
+	color: #343434;
+}
+.item_info{
+	font-size: 10px;
+	padding: 5px;
+	color: #9B9B9B;
+}
 
 
 
