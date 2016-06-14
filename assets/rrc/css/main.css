@@ -35,7 +35,9 @@ body {
 
 	padding-bottom: 80px;
 }
-
+.bg_color{
+	background-color: #E7E8EC;
+}
 .wrap{
 	background-color: #EFEFEF;
 }
@@ -45,12 +47,15 @@ body {
 .reset_margin{
 	margin: 0;
 }
+.magin_top_10{
+	margin-top: 10px;
+}
 .reset{
 	padding: 0px;
 	margin: 0px;
 	margin-right: auto;
-    margin-left: auto;
-    width: 100%;
+	margin-left: auto;
+	width: 100%;
 }
 
 /*搜索*/
@@ -144,7 +149,7 @@ body {
 }
 .left_area{
 
-position: absolute;
+	position: absolute;
 	float: left;
 	background-color: #EDEDED;
 }
@@ -227,7 +232,7 @@ position: absolute;
 }
 .weui_cell_i{
 	padding: 10px 10px;
-    
+
 }
 .weui_grids_i{
 	position: relative;
@@ -453,10 +458,10 @@ position: absolute;
 }
 
 .shop_icon_area .shop_icon{
-width: 90px;
-height: 30px;
-margin: 10px;
-border: solid 1px #DBDBDB;
+	width: 90px;
+	height: 30px;
+	margin: 10px;
+	border: solid 1px #DBDBDB;
 }
 .shop_icon_area .icon_area{
 	width: 110px;
@@ -481,9 +486,9 @@ border: solid 1px #DBDBDB;
 }
 .shop_info_area .fannum{
 
-font-size: 14px;
-font-weight: bold;
-color: #2E2E2E;
+	font-size: 14px;
+	font-weight: bold;
+	color: #2E2E2E;
 }
 .shop_info_area .text_fans{
 	font-size: 12px;
@@ -506,6 +511,7 @@ color: #2E2E2E;
 .goods_wrap{
 	background-color: #E7E8EC;
 }
+
 .cate_ul li{
 	padding: 10px;
 	color: #303030;
@@ -513,8 +519,8 @@ color: #2E2E2E;
 	font-size: 12px;
 	border: solid 1px #DCDCDC;
 	float: left;
-margin-right: 10px;
-margin-bottom: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
 }
 .cate_ul li a{
 	color: #303030;
@@ -541,7 +547,7 @@ margin-bottom: 10px;
 	padding: 10px;
 }
 .good_detail {
-margin-top: 15px;
+	margin-top: 15px;
 }
 .goods_param .tablebg{
 	background-color: #fff;
@@ -571,9 +577,9 @@ margin-top: 15px;
 }
 .goods_tab_bar a{
 	margin-top: 5px;
-text-align: center;
-margin-bottom: 5px;
-text-decoration: none;
+	text-align: center;
+	margin-bottom: 5px;
+	text-decoration: none;
 
 
 }
@@ -583,7 +589,7 @@ text-decoration: none;
 	font-size: 10px;
 }
 .bar_t{
-line-height: 48px;
+	line-height: 48px;
 	color: #ffffff;
 	font-size: 12px;
 	text-align: center;
@@ -610,11 +616,11 @@ line-height: 48px;
 	color: #E23A39;
 	padding: 5px;
 }
- .item_price .s_price_down{
-color: #ffffff;
-padding: 3px;
-font-size: 11px;
-background-color: #E23A39;
+.item_price .s_price_down{
+	color: #ffffff;
+	padding: 3px;
+	font-size: 11px;
+	background-color: #E23A39;
 }
 .good_icon_lay{
 	overflow:hidden;
@@ -634,10 +640,66 @@ background-color: #E23A39;
 	padding: 5px;
 	color: #9B9B9B;
 }
+.order_item .o_btn{
+	margin-left: 10px;
+	padding: 3px 10px;
 
+}
+.ppstate{
+	padding: 10px;
+}
+.p_state,.p_price{
+	font-size: 10px;
+	color: #5F5F5F;
+	padding: 5px;
+}
+.p_state_text{
+	color: #3585F4;
+}
+.p_price_text{
+	color: #C53E42;
+}
+.p_item{
+	border-top: solid 0.5px #DBDBDB; 
+	padding: 0 10px 10px 10px;
+	margin-left: 10px;
+}
+.trans_title{ 
+	display: block;
+	padding-left: 2px;
+	font-size: 13px;
+	line-height: 16px;
+	color: #343434;
+}
+.order_item .or_shop_icon{
+	height: 20px;
+	width: 60px;
+	margin-right: 10px;
+}
+.order_item .or_right_area{
+	height: 15px;
+	width: 10px;
+	margin-left: 5px;
+}
+/**
+ * 消费记录
+ */
+.consume_wraper,.cc_wrap thead{
+		font-size: 13px;
+	line-height: 16px;
+	color: #343434;
+	
+}
+.consume_wraper,.cc_wrap thead th{
+	text-align: center;
+}
+.consume_wraper,.cc_wrap tbody{
+		font-size: 10px;
 
-
-
-
-
+	line-height: 14px;
+		color: #5F5F5F;
+}
+.consume_wraper,.cc_wrap tbody td{
+	text-align: center;
+}
 
