@@ -746,3 +746,7 @@ text-align: center;
 	text-align: center;
 	border-bottom: 1px solid #DBDBDB;
 }
+.date_input{
+	background:none;
+	border: none;
+}
