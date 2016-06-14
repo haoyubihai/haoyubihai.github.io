@@ -650,6 +650,7 @@ body {
 	padding: 10px;
 	position: relative;
 	height: 60px;
+	display: inline-block;
 
 }
 
