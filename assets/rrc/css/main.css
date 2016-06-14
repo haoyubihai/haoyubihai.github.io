@@ -724,8 +724,9 @@ text-align: center;
  	color: #343434;
 
  }
- .consume_wraper thead th{
+ .consume_wraper thead tr th{
  	text-align: center;
+ 	padding: 5px 3px;
  }
  .consume_wraper tbody{
  	font-size: 10px;
