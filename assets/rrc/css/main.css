@@ -699,7 +699,7 @@ body {
  	line-height: 14px;
  	color: #5F5F5F;
  }
- .cc_wrap tbody td{
+ .cc_wrap tbody tr td{
  	text-align: center;
  	padding: 3px;
  }
@@ -718,7 +718,7 @@ body {
  	line-height: 14px;
  	color: #5F5F5F;
  }
- .consume_wraper tbody td{
+ .consume_wraper tbody tr td{
  	text-align: center;
  	padding: 3px;
  }
