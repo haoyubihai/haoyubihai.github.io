@@ -684,40 +684,42 @@ body {
 /**
  * 消费记录.consume_wraper,
  */
-.cc_wrap thead{
-		font-size: 13px;
-	line-height: 16px;
-	color: #343434;
-	
-}
-.cc_wrap thead th{
-	text-align: center;
-}
-.cc_wrap tbody{
-		font-size: 10px;
+ .cc_wrap thead{
+ 	font-size: 13px;
+ 	line-height: 16px;
+ 	color: #343434;
 
-	line-height: 14px;
-		color: #5F5F5F;
-}
-.cc_wrap tbody td{
-	text-align: center;
-}
-.consume_wraper thead{
-		font-size: 13px;
-	line-height: 16px;
-	color: #343434;
-	
-}
-.consume_wraper thead th{
-	text-align: center;
-}
-.consume_wraper tbody{
-		font-size: 10px;
+ }
+ .cc_wrap thead th{
+ 	text-align: center;
+ }
+ .cc_wrap tbody{
+ 	font-size: 10px;
 
-	line-height: 14px;
-		color: #5F5F5F;
-}
-.consume_wraper tbody td{
-	text-align: center;
-}
+ 	line-height: 14px;
+ 	color: #5F5F5F;
+ }
+ .cc_wrap tbody td{
+ 	text-align: center;
+ 	padding: 3px;
+ }
+ .consume_wraper thead{
+ 	font-size: 13px;
+ 	line-height: 16px;
+ 	color: #343434;
+
+ }
+ .consume_wraper thead th{
+ 	text-align: center;
+ }
+ .consume_wraper tbody{
+ 	font-size: 10px;
+
+ 	line-height: 14px;
+ 	color: #5F5F5F;
+ }
+ .consume_wraper tbody td{
+ 	text-align: center;
+ 	padding: 3px;
+ }
 
