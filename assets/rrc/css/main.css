@@ -738,4 +738,11 @@ text-align: center;
  	text-align: center;
  	padding: 5px  3px;
  }
-
+/*销售统计*/
+.sell_t_title h4{
+	font-size: 13px;
+	color: color: #343434;
+	padding: 10px;
+	text-align: center;
+	border-bottom: 1px solid #DBDBDB;
+}

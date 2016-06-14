@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>销售统计</title>   
+	<!-- Bootstrap -->
+	<link href="../../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<!--你自己的样式文件 -->
+	<link rel="stylesheet" href="../../jquery-weui/lib/weui.css">
+	<link rel="stylesheet" href="../../jquery-weui/css/jquery-weui.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
+	<link rel="stylesheet" type="text/css" href="../../rrc/css/main.css">
+</head>
+<body>
+	<div class="cc_wrap bg_color">
+		<div class="weui_cells">
+			<div>
+			<div class="sell_t_title"><h4>年度消费统计</h4></div>
+				<table class="table table-striped">
+								<thead>
+								<tr>
+									<th class="col-xs-4">年度</th>
+									<th class="col-xs-4">销售额</th>
+									<th class="col-xs-4">贡献额</th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<td class="col-xs-4">2010年</td>
+									<td class="col-xs-4">￥156.00</td>
+									<td class="col-xs-4">￥25.00</td>
+								</tr>
+								<tr>
+									<td class="col-xs-4">2011年</td>
+									<td class="col-xs-4">￥156.00</td>
+									<td class="col-xs-4">￥25.00</td>
+								</tr>
+								<tr>
+									<td class="col-xs-4">2012年</td>
+									<td class="col-xs-4">￥156.00</td>
+									<td class="col-xs-4">￥25.00</td>
+								</tr>
+								<tr>
+									<td class="col-xs-4">2013年</td>
+									<td class="col-xs-4">￥156.00</td>
+									<td class="col-xs-4">￥25.00</td>
+								</tr>
+								<tr>
+									<td class="col-xs-4">2014年</td>
+									<td class="col-xs-4">￥156.00</td>
+									<td class="col-xs-4">￥25.00</td>
+								</tr>
+								<tr>
+									<td class="col-xs-4">2015年</td>
+									<td class="col-xs-4">￥156.00</td>
+									<td class="col-xs-4">￥25.00</td>
+								</tr>
+								<tr>
+									<td class="col-xs-4">2016年</td>
+									<td class="col-xs-4">￥156.00</td>
+									<td class="col-xs-4">￥25.00</td>
+								</tr>
+								</tbody>
+							</table>	
+
+			</div>
+			<div id="id-year-sum-chart" class="graph"></div>
+		</div>
+		<div class="weui_cells">
+	<div>
+	<div class="sell_t_title"><h4>月度消费统计&nbsp;&nbsp;&nbsp;<span id="date_select">日期：2016-05</span>&nbsp;<span class="glyphicon glyphicon-triangle-bottom arrow_down"></span></h4></div>
+				<table class="table table-striped">
+								<thead>
+								<tr>
+									<th class="col-xs-3">年度</th>
+									<th class="col-xs-3">月份</th>
+									<th class="col-xs-3">销售额</th>
+									<th class="col-xs-3">贡献额</th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<td class="col-xs-3">2010年</td>
+									<td class="col-xs-3">7月</td>
+									<td class="col-xs-3">￥156.00</td>
+									<td class="col-xs-3">￥25.00</td>
+								</tr>
+								<tr>
+									<td class="col-xs-3">2010年</td>
+									<td class="col-xs-3">7月</td>
+									<td class="col-xs-3">￥156.00</td>
+									<td class="col-xs-3">￥25.00</td>
+								</tr>
+								<tr>
+									<td class="col-xs-3">2010年</td>
+									<td class="col-xs-3">7月</td>
+									<td class="col-xs-3">￥156.00</td>
+									<td class="col-xs-3">￥25.00</td>
+								</tr>
+								<tr>
+									<td class="col-xs-3">2010年</td>
+									<td class="col-xs-3">7月</td>
+									<td class="col-xs-3">￥156.00</td>
+									<td class="col-xs-3">￥25.00</td>
+								</tr>
+								<tr>
+									<td class="col-xs-3">2010年</td>
+									<td class="col-xs-3">7月</td>
+									<td class="col-xs-3">￥156.00</td>
+									<td class="col-xs-3">￥25.00</td>
+								</tr>
+								</tbody>
+							</table>	
+	
+
+			</div>
+			<div id="id-month-sum-chart" class="graph"></div>
+		</div>
+	</div>
+	
+	<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+	<script src="../../bootstrap/js/jquery-1.12.4.min.js"></script>
+	<script src="../../jquery-weui/js/jquery-weui.js"></script>
+	<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+	<script src="../../bootstrap/js/bootstrap.min.js"></script>
+ <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+<!-- <script  src="../js/consumecount.js"></script> -->
+<script type="text/javascript">
+	//图表
+$(function(){
+    Morris.Bar({
+        element: 'id-year-sum-chart',
+        data: [{'x':'2010年','y':1980,'z':320},
+        	    {'x':'2011年','y':3276,'z':520},
+       	      	{'x':'2012年','y':7865,'z':1342},
+       	     	{'x':'2013年','y':5689,'z':1546},
+       	    	{'x':'2014年','y':2397,'z':580},
+       	   		{'x':'2015年','y':16574,'z':2480},
+       	  		{'x':'2016年','y':23768,'z':3268}],
+        xkey: 'x',
+        parseTime: false,
+        ykeys: ['y','z'],
+        labels: ['销售额','贡献额'],
+        barRatio: 0.4,
+        xLabelAngle: 35,
+        hideHover: 'auto',
+        barColors: ['#FCB322','#A9D86E']
+      });
+    Morris.Bar({
+        element: 'id-month-sum-chart',
+        data: [{'x':'2010年1月','y':1980,'z':320},
+        	    {'x':'2011年2月','y':3276,'z':520},
+       	      	{'x':'2012年3月','y':7865,'z':1342},
+       	     	{'x':'2013年4月','y':5689,'z':1546},
+       	    	{'x':'2014年5月','y':2397,'z':580},
+       	   		{'x':'2015年6月','y':16574,'z':2480},
+       	  		{'x':'2016年7月','y':23768,'z':3268},
+        	    {'x':'2011年8月','y':3276,'z':520},
+       	     	{'x':'2013年9月','y':5689,'z':1546},
+       	  		{'x':'2016年10月','y':23768,'z':3268},
+       	        {'x':'2010年11月','y':1980,'z':320},
+              	{'x':'2013年12月','y':5689,'z':1546}],
+        xkey: 'x',
+        parseTime: false,
+        ykeys: ['y','z'],
+        labels: ['销售额','贡献额'],
+        barRatio: 0.4,
+        xLabelAngle: 35,
+        hideHover: 'auto',
+        barColors: ['#FCB322','#A9D86E']
+      });
+});
+
+      $("#date_select").calendar();
+
+
+</script>
+</body>
+</html>
