@@ -68,7 +68,52 @@
 			<div id="id-year-sum-chart" class="graph"></div>
 		</div>
 		<div class="weui_cells">
+	<div>
+				<table class="table table-striped">
+								<thead>
+								<tr>
+									<th class="col-xs-3">年度</th>
+									<th class="col-xs-3">月份</th>
+									<th class="col-xs-3">交易额</th>
+									<th class="col-xs-3">节省</th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<td class="col-xs-3">2010年</td>
+									<td class="col-xs-3">7月</td>
+									<td class="col-xs-3">￥156.00</td>
+									<td class="col-xs-3">￥25.00</td>
+								</tr>
+								<tr>
+									<td class="col-xs-3">2010年</td>
+									<td class="col-xs-3">7月</td>
+									<td class="col-xs-3">￥156.00</td>
+									<td class="col-xs-3">￥25.00</td>
+								</tr>
+								<tr>
+									<td class="col-xs-3">2010年</td>
+									<td class="col-xs-3">7月</td>
+									<td class="col-xs-3">￥156.00</td>
+									<td class="col-xs-3">￥25.00</td>
+								</tr>
+								<tr>
+									<td class="col-xs-3">2010年</td>
+									<td class="col-xs-3">7月</td>
+									<td class="col-xs-3">￥156.00</td>
+									<td class="col-xs-3">￥25.00</td>
+								</tr>
+								<tr>
+									<td class="col-xs-3">2010年</td>
+									<td class="col-xs-3">7月</td>
+									<td class="col-xs-3">￥156.00</td>
+									<td class="col-xs-3">￥25.00</td>
+								</tr>
+								</tbody>
+							</table>	
 
+			</div>
+			<div id="id-month-sum-chart" class="graph"></div>
 		</div>
 	</div>
 	
@@ -79,6 +124,53 @@
 	<script src="../../bootstrap/js/bootstrap.min.js"></script>
  <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
-<script  src="../js/consumecount.js"></script>
+<!-- <script  src="../js/consumecount.js"></script> -->
+<script type="text/javascript">
+	//图表
+$(function(){
+    Morris.Bar({
+        element: 'id-year-sum-chart',
+        data: [{'x':'2010年','y':1980,'z':320},
+              {'x':'2011年','y':3276,'z':520},
+                {'x':'2012年','y':7865,'z':1342},
+              {'x':'2013年','y':5689,'z':1546},
+              {'x':'2014年','y':2397,'z':580},
+              {'x':'2015年','y':16574,'z':2480},
+              {'x':'2016年','y':23768,'z':3268}],
+        xkey: 'x',
+        parseTime: false,
+        ykeys: ['y','z'],
+        labels: ['消费额','节省'],
+        barRatio: 0.4,
+        xLabelAngle: 35,
+        hideHover: 'auto',
+        barColors: ['#FCB322','#A9D86E']
+      });
+    Morris.Bar({
+        element: 'id-month-sum-chart',
+        data: [{'x':'2010年1月','y':1980,'z':320},
+              {'x':'2011年2月','y':3276,'z':520},
+                {'x':'2012年3月','y':7865,'z':1342},
+              {'x':'2013年4月','y':5689,'z':1546},
+              {'x':'2014年5月','y':2397,'z':580},
+              {'x':'2015年6月','y':16574,'z':2480},
+              {'x':'2016年7月','y':23768,'z':3268},
+              {'x':'2011年8月','y':3276,'z':520},
+              {'x':'2013年9月','y':5689,'z':1546},
+              {'x':'2016年10月','y':23768,'z':3268},
+                {'x':'2010年11月','y':1980,'z':320},
+                {'x':'2013年12月','y':5689,'z':1546}],
+        xkey: 'x',
+        parseTime: false,
+        ykeys: ['y','z'],
+        labels: ['消费额','节省'],
+        barRatio: 0.4,
+        xLabelAngle: 35,
+        hideHover: 'auto',
+        barColors: ['#FCB322','#A9D86E']
+      });
+})
+
+</script>
 </body>
 </html>
