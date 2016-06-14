@@ -701,7 +701,7 @@ body {
  }
  .cc_wrap tbody tr td{
  	text-align: center;
- 	padding: 3px;
+ 	padding: 5px 3px;
  }
  .consume_wraper thead{
  	font-size: 13px;
@@ -720,6 +720,6 @@ body {
  }
  .consume_wraper tbody tr td{
  	text-align: center;
- 	padding: 3px;
+ 	padding: 5px  3px;
  }
 
