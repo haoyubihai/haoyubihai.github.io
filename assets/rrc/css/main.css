@@ -682,24 +682,42 @@ body {
 	margin-left: 5px;
 }
 /**
- * 消费记录
+ * 消费记录.consume_wraper,
  */
-.consume_wraper,.cc_wrap thead{
+.cc_wrap thead{
 		font-size: 13px;
 	line-height: 16px;
 	color: #343434;
 	
 }
-.consume_wraper,.cc_wrap thead th{
+.cc_wrap thead th{
 	text-align: center;
 }
-.consume_wraper,.cc_wrap tbody{
+.cc_wrap tbody{
 		font-size: 10px;
 
 	line-height: 14px;
 		color: #5F5F5F;
 }
-.consume_wraper,.cc_wrap tbody td{
+.cc_wrap tbody td{
+	text-align: center;
+}
+.consume_wraper thead{
+		font-size: 13px;
+	line-height: 16px;
+	color: #343434;
+	
+}
+.consume_wraper thead th{
+	text-align: center;
+}
+.consume_wraper tbody{
+		font-size: 10px;
+
+	line-height: 14px;
+		color: #5F5F5F;
+}
+.consume_wraper tbody td{
 	text-align: center;
 }
 
