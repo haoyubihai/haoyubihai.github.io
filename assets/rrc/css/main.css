@@ -643,29 +643,22 @@ body {
 .order_item .o_btn{
 	margin-left: 10px;
 	padding: 3px 10px;
-	width: 80px;
+
 
 }
 .goods_deal{
 	padding: 10px;
-	position: relative;
+	
 	height: 60px;
-	display: inline-block;
+	
 
 }
 
 .ppstate{
-	height: 60px;
-	position: absolute;
-	top: 0;
-	left: 10;
-	text-align: center;
+padding-left: 10px;
 }
 .btn_deal{
-	height: 60px;
-position: absolute;
-bottom: 0;
-right: 0;
+
 padding-right: 10px;
 text-align: center;
 }
