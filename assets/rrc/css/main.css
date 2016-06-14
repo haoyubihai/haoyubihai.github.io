@@ -646,14 +646,34 @@ body {
 	width: 80px;
 
 }
-.ppstate{
+.goods_deal{
 	padding: 10px;
+	position: relative;
+	height: 60px;
+
+}
+
+.ppstate{
+	height: 60px;
+	position: absolute;
+	top: 0;
+	left: 10;
+	text-align: center;
+}
+.btn_deal{
+	height: 60px;
+position: absolute;
+bottom: 0;
+right: 0;
+padding-right: 10px;
+text-align: center;
 }
 .p_state,.p_price{
 	font-size: 10px;
 	color: #5F5F5F;
 	padding: 5px;
 }
+
 .p_state_text{
 	color: #3585F4;
 }
