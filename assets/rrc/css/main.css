@@ -655,12 +655,12 @@ body {
 }
 
 .ppstate{
-padding-left: 10px;
+	padding-left: 10px;
 }
 .btn_deal{
 
-padding-right: 10px;
-text-align: center;
+	padding-right: 10px;
+	text-align: center;
 }
 .p_state,.p_price{
 	font-size: 10px;
@@ -738,15 +738,115 @@ text-align: center;
  	text-align: center;
  	padding: 5px  3px;
  }
-/*销售统计*/
-.sell_t_title h4{
-	font-size: 13px;
-	color: color: #343434;
-	padding: 10px;
-	text-align: center;
-	border-bottom: 1px solid #DBDBDB;
+ /*销售统计*/
+ .sell_t_title h4{
+ 	font-size: 13px;
+ 	color: color: #343434;
+ 	padding: 10px;
+ 	text-align: center;
+ 	border-bottom: 1px solid #DBDBDB;
+ }
+ .date_input{
+ 	background:none;
+ 	border: none;
+ }
+
+ /*项目列表*/
+ .products_list .products_list_item{
+ 	
+ }
+ .div15{
+	background-color: #E7E8EC;
+  	height: 15px;
+  	width: 100%;
+  }
+ .products_list .p_item_icon{
+ 	width: 100%;
+ 	height: 120px;
+ }
+ .products_list .laycenter{
+ 	text-align: center;
+ 	overflow: hidden;
+ }
+ .products_list .p_item_title{
+ 	padding: 15px;
+ 	font-size: 16px;
+ 	line-height: 16px;
+ 	color: #343434;
+ }
+ .products_list  .p_item_top{
+ 	padding-top: 10px;
+ 	position: relative;
+ }
+ .products_list  .deal_action{
+
+ 	padding-right: 8px;
+ 	position: absolute;
+ 	top:0;
+ 	right: 0;
+ }
+ .products_list  .deal_action a{
+ 	text-decoration: none;
+ 	font-size: 14px;
+
+ }
+ .products_list  .deal_action .p_close{
+ 	padding-left: 5px;
+
+ 	border-left: 1px solid #DBDBDB;
+ }
+
+/*账目管理*/
+.c_top h4{
+padding: 15px;
+position: relative;
 }
-.date_input{
-	background:none;
-	border: none;
+.c_top_info{
+
+position: relative;
 }
+
+.c_top_info a{
+	text-decoration: none;
+	font-size: 14px;
+	position: absolute;
+	top: 15px;
+	right: 15px;
+
+}
+
+.c_top .redprice{
+	color: #E53739;
+	font-size: 18px;
+}
+.cash_wrap .div15{
+
+}
+.c_panel h4{
+	font-size: 14px;
+	padding: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
