@@ -827,9 +827,12 @@ position: relative;
 	padding: 15px;
 }
 
-
-
-
+.ad_wrap .icon_pan{
+	padding-left: 15px;
+}
+.new_address_wrap .sure_btn {
+	margin: 15px;
+}
 
 
 
