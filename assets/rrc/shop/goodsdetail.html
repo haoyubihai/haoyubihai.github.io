@@ -29,13 +29,13 @@
     				</ol>
     				<div class="carousel-inner" role="listbox">
     					<div class="item active">
-    						<a href="#"><img class="image-banner" src="../images/ad-03.jpg" alt="..."></a>
+    						<a id="pb1" href="#"><img class="image-banner" src="../images/ad-03.jpg" alt="..."></a>
     					</div>
     					<div class="item">
-    						<a href="#"><img class="image-banner" src="../images/ad-01.jpg" alt="..."></a>
+    						<a d="pb1" href="#"><img class="image-banner" src="../images/ad-01.jpg" alt="..."></a>
     					</div>
     					<div class="item">
-    						<a href="#"><img class="image-banner" src="../images/ad-02.jpg" alt="..."></a>
+    						<a d="pb1" href="#"><img class="image-banner" src="../images/ad-02.jpg" alt="..."></a>
     					</div>
     				</div>
     			</div>
@@ -406,6 +406,33 @@
     													<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
     													<script src="../../bootstrap/js/bootstrap.min.js"></script>
     													<script type="text/javascript" src="../../jquery-weui/js/city-picker.js" charset="utf-8"></script>
+                                                         <script type='text/javascript' src='../../jquery-weui/js/swiper.js' charset='utf-8'></script>
     													<script type="text/javascript" src="../../rrc/js/pageload.js"></script>
+                                                        <script type="text/javascript">
+
+      var pb1 = $.photoBrowser({
+        items: [
+          "../images/pic1.jpg",
+          "../images/pic2.jpg",
+          "../images/pic3.jpg",
+          "../images/pic4.jpg"
+        ],
+
+        onSlideChange: function(index) {
+          console.log(this, index);
+        },
+
+        onOpen: function() {
+          console.log("onOpen", this);
+        },
+        onClose: function() {
+          console.log("onClose", this);
+        }
+      });
+      $("#pb1").click(function() {
+        pb1.open();
+      });
+
+                                                        </script>
     												</body>
     												</html>
