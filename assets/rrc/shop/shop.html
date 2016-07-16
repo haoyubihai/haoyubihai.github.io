@@ -40,7 +40,7 @@
           <div class="weui-row fillwh">
             <div class="weui-col-25 shop_left reset">
               <div class="weui_cells left_area">
-                <div class="weui_cell weui_cell_i">
+                <div class="weui_cell weui_cell_i " id="1000">
                   <div class=" list_title">
                     <p>生活美食</p>
                   </div>
@@ -472,5 +472,17 @@
 <script src="../../jquery-weui/js/jquery-weui.js"></script>
 <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
 <script src="../../bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+ var select=function(){$(".left_area").children(".weui_cell_i").removeClass("shop_menu_item_active");}
+  $(".weui_cell_i").click(function(){
+    select();
+  $(this).addClass("shop_menu_item_active");
+  });
+  $(".right_area").children().hide();
+  $("#1000").addClass("shop_menu_item_active");
+  $(".right_area").children().first().show();
+
+
+</script>
 </body>
 </html>

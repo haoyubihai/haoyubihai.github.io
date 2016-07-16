@@ -171,7 +171,7 @@ body {
 .shop_right{
 	position: absolute;
 	right: 0;
-	top: 0;
+	top: 44px;
 	overflow-y: scroll;
 	
 }
@@ -183,9 +183,10 @@ body {
 }
 .right_area{
 
-	
-	
-
+}
+.shop_menu_item_active{
+	background-color: #fff;
+	color: #C61503;
 }
 .s-left-item{
 	background-color: #DDDDDD;
@@ -288,10 +289,12 @@ body {
 .gird_categry{
 	margin-top: 0px;
 }
+.gird_categry .gird_item_icon img{
+	display: hidden;
+}
 .gird_item_icon{
-	width: 48px;
-	height: 48px;
-	margin: 0 auto;
+	    margin: 0 auto;
+    text-align: center;
 }
 .gird_item_icon_res img{
 	height: 73px;
@@ -351,14 +354,26 @@ body {
 	border-bottom: 1px solid #DBDBDB;
 }
 .comment_sen{
-
-	margin: 20px 10px;
-	font-size: 14px;
+	text-align: center;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: #fff;
+	padding: 0 0 10px 0;
+	font-size: 16px;
+	border-top: 1px solid #949494;
+	padding-top: 8px;
 
 }
 .comment_sen .coment_send{
 	vertical-align: middle;
-	margin:0 auto;
+	margin:3px auto;
+	text-decoration: none;
+	color: #fff;
+}
+.weui_textarea{
+	padding: 10px 10px;
 }
 .v_category .v_list{
 	padding:10px;
