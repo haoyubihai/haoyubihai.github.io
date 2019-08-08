@@ -25,7 +25,8 @@
   "bugs": {
     "url": "https://github.com/haoyubihai/haoyubihai.github.io/issues"
   },
-  "homepage": "https://github.com/haoyubihai/haoyubihai.github.io#readme"
-
-  
+  "homepage": "https://github.com/haoyubihai/haoyubihai.github.io#readme",
+  "dependencies": {
+    "jquery": "^3.4.1"
+  }
 }
