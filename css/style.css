@@ -563,7 +563,26 @@ h6 {
         opacity: 0;
     }
 }
+.team-bg{
+    background-image: url(../photos/team.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+}
 
+.team-bg .hero-title {
+    line-height: 600px;
+    text-align: center;
+    font-family: "Oswald";
+    color: #fff;
+   text-shadow: grey;
+    text-transform: uppercase;
+    font-size: 70px;
+    font-weight: 400;
+    letter-spacing: 8px;
+    word-spacing: 4px;
+    margin: 0px auto;
+}
 .home {
     background-image: url(../images/hero-img9.jpg);
     background-position: top center;
@@ -576,6 +595,8 @@ h6 {
     /* Temp CSS */
     /* Temp CSS End */
 }
+
+
 
 .home .st-brand {
     text-align: center;
@@ -1913,8 +1934,10 @@ textarea.formFieldError {
 }
 
 footer.site-footer {
+    margin-top: 50px;
+    margin-bottom: 50px;
     background-color: #fcfcfc;
-    padding: 10px 0;
+    padding: 10px 20px;
     color: #9f9f9f;
     font-size: 13px;
     text-align: center;
