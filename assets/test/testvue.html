@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div id="app">
+		{{ message }} {{hello()}}
+
+		{{a}}
+
+		<button type="button" v-on:click="p()"> click</button>
+		{{ a }}
+
+		<ul>
+			<li v-for=" v,n in lan">
+				{{v,n}}
+			</li>
+		</ul>
+
+	</div>
+	
+
+
+	
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script >
+	var app = new Vue({
+		el: '#app',
+		data: {
+			message: 'Hello Vue!',
+			a:1,
+			lan:[
+			{android:"android"},
+			{kotlin:"kotlin"},
+			{python:"python"}]
+		},
+		methods:{
+
+			hello(){
+				return "vue hello";
+			},
+			p(){
+				return this.a+=1;
+			}
+		}
+
+	});
+	
+
+
+</script>
+
+</html>

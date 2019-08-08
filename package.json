@@ -1,0 +1,31 @@
+{
+  "name": "livelife",
+  "version": "1.0.0",
+  "description": "livelife",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haoyubihai/haoyubihai.github.io.git"
+  },
+  "keywords": [
+    "jiarh",
+    "jrhlive",
+    "livelife",
+    "ailive",
+    "ailife",
+    "smartlive",
+    "smartlife",
+    "livesmart"
+  ],
+  "author": "jiarh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/haoyubihai/haoyubihai.github.io/issues"
+  },
+  "homepage": "https://github.com/haoyubihai/haoyubihai.github.io#readme"
+
+  
+}

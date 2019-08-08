@@ -1,0 +1,14 @@
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+h1,p,a{ color: red ;font-size: 30px}
+
+.p1{
+	font-size: 30px;
+}
+.p2{
+	color: blue;
+	font-style: italic;
+}
