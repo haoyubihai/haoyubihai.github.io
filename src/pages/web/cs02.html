@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            margin: 0 auto;
+            width: 80%;
+        }
+
+        h2 {
+            font-weight: normal;
+            text-align: center;
+        }
+
+        p {
+            color: rgba(0, 22, 0, 0.8);
+
+            text-indent: 2em;
+            line-height: 25px;
+            font-size: 14px;
+            letter-spacing: 1px;
+            word-spacing: 2px;
+        }
+
+        .shadow-v {
+            text-shadow: 2px 2px 8px #2b542c;
+        }
+
+        span {
+            background-color: #31ada4;
+            width: 200px;
+            height: 200px;
+        }
+
+        .before_div::before {
+            content: "before";
+        }
+
+        .before_div::after {
+            content: " after";
+        }
+
+        .bg-div {
+            width: 100%;
+            height: 400px;
+            /*     background-size: cover;*//*图片等比例缩放*/
+            background-size: contain; /*保证图片全部显示*/
+            background-position: 50% center;
+            background-repeat: no-repeat;
+            background-image: url("../../../photos/bm.png");
+        }
+
+        .content-bg {
+            width: 100%;
+            height: 300px;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+    </style>
+</head>
+<body>
+<h2> 上海迪士尼乐园又一次因为其入园规定被告上法庭。</h2>
+<p>
+
+
+    2019年3月5日，华东政法大学法学院的大三学生小王向上海市浦东新区人民法院提起诉讼，向被告上海国际主题乐园有限公司提出了两点诉讼请求:
+    一、确认上海迪士尼乐园禁止游客携带食品入园的格式条款无效；二、请求上海迪士尼乐园赔偿原告损失，包括原告在迪士尼乐园外购买却因被告不合理规则而被迫丢弃的食品费用，共计 46.3 元。
+
+    上海迪士尼乐园门票背面。本文图片均为小王同学提供（除署名外）
+
+    这一诉讼缘起于小王在上海迪士尼的一次游玩。小王告诉澎湃新闻（www.thepaper.cn）记者，2019年1月28日，她花费365元在某平台上购买了一张上海迪士尼乐园一日游特价票，并于1月30日前往游玩。入园前，小王花了46.3元买了饼干等零食。在乐园入口处，工作人员将小王拦下，要求对其背包进行检查。
+</p>
+<div class="shadow-v">华东政法大学法学院</div>
+<p class="shadow-p"> 2019年3月5日，华东政法大学法学院的大三学生小王向上海市浦东新区人民法院提起诉讼，向被告上海国际主题乐园有限公司提出了两点诉讼请求:
+    一、确认上海迪士尼乐园禁止游客携带食品入园的格式条款无效；二、请求上海迪士尼乐园赔偿原告损失，包括原告在迪士尼乐园外购买却因被告不合理规则而被迫丢弃的食品费用，共计 46.3 元。
+
+    上海迪士尼乐园门票背面。本文图片均为小王同学提供（除署名外）
+</p>
+<ul>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+<div></div>
+<p></p>
+<div class="red">red</div>
+<div id="wo">wo</div>
+<div class="header">header</div>
+<div class="hello">hello</div>
+<div class="main">
+    <div class="left"></div>
+    <right></right>
+</div>
+
+行内元素：<br>
+<ol>
+    <li>和相邻元素在一行</li>
+    <li>不能设置宽高，可以在水平方向设置pading 和margin ，垂直方向无效</li>
+    <li>默认宽度为它本身内容</li>
+    <li>行内元素只能容纳文本或者其他行内元素和其他元素</li>
+</ol>
+<hr>
+块级元素：<br>
+<ol>
+    <li>总是从新开始</li>
+    <li>高度，行高，外边距，内边距都可以控制</li>
+    <li>宽度默认是100%</li>
+    <li>可以容纳内联元素</li>
+</ol>
+特殊标签: <br>
+input img td
+<a href="#">a</a><br>
+<span>span</span><br>
+
+块级转换行 display :inline <br>
+行转块 display:block <br>
+<span style="display: block ;width: 100px;height: 100px;background-color: #2b542c">span</span>
+行内块转换 display:inline-block <br>
+
+<a href="#" style="display: inline-block;background-color: #31ada4;height: 100px ;width: 100%;"> inline-block</a>
+<hr>
+<ol>
+    <li>并集选择器 ， 隔开</li>
+    <li>后代选择器 空格隔开</li>
+    <li>交集选择器</li>
+    <li>&gt; 子元素选择器 只选第一个儿子选择器</li>
+    <li>属性选择器可以用[] 如 a[title=hello]</li>
+    <li>div[class^=font] 表示class以font开始选择器</li>
+    <li>div[class&=font] 表示class以font结尾选择器</li>
+    <li>div[class*=font] 表示class包含font选择器</li>
+    <li>:hover :active :link :visited :first-child :nth-child伪类选择器</li>
+    <li>p::first-letter，::first-line,::selection 伪元素选择器</li>
+    <li>::before content ... 必须有一个content 盒子内部的前面
+        <div class="before_div">
+            world
+        </div>
+    </li>
+
+    <li>::after content 盒子内部的后面</li>
+</ol>
+
+<div class="nav">
+    <ul>
+        <li>公司简介</li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
+<div class="sitenav"></div>
+<div class="bg-div">
+    <div class="content-bg"></div>
+</div>
+
+<style>
+    .tu, .aoo {
+        margin-top: 20px;
+        color: #cccccc;
+        background-color: #cccccc;
+        font: 700 80px "微软雅黑";
+    }
+
+    .tu {
+        margin-top: 30px;
+        text-shadow: 2px 2px 2px #000, -2px -2px 2px #FFFFFF;
+    }
+
+    .aoo {
+        text-shadow: -2px -2px 2px #000, 2px 2px 2px #fff;
+    }
+</style>
+<div class="tu">我是凸起文字</div>
+<div class="aoo">我是凹下文字</div>
+
+<style>
+    .nav_n {
+        background-color: #000;
+    }
+
+    .nav_n a {
+        width: 180px;
+        height: 50px;
+        background-color: orange !important; /*级别最高，优先级最高*/
+        display: inline-block;
+        text-align: center;
+        line-height: 50px;
+        color: #fff;
+        font-size: 20px;
+        text-decoration: none;
+    }
+    .nav_n a:hover{
+         font-size: 30px;
+        background-color: red;
+    }
+</style>
+<nav class="nav_n">
+    <a href="#">爱看动画</a>
+    <a href="#">第六空间</a>
+    <a href="#">立刻减肥</a>
+    <a href="#">打卡机哦</a>
+</nav>
+
+<p>
+<ol>
+    <li>CSS 层叠性：如果样式冲突 ，就近原则</li>
+    <li>继承性 text-  font- line- color </li>
+    <li>优先级
+        <ul>
+            <li>优先级 !important&gt;行内样式&gt;id选择器&gt;伪类选择器==类选择器&gt;标签选择器</li>
+            <li>优先级叠加（权重叠加）
+                <ul>
+                    <li>div ul li   0002</li>
+                    <li>.nav ul li 0012</li>
+                    <li>a:hover 0011</li>
+                    <li>.nav a  0011</li>
+                    <li>#nav p  0101</li>
+                </ul></li>
+            <li>继承的权重为 0000</li>
+        </ul></li>
+</ol></p>
+<div>
+    <p>wwwwwwwwwwwwwwwwwwwwww</p>
+</div>
+<div class="empty" style="height: 600px"></div>
+</body>
+</html>
