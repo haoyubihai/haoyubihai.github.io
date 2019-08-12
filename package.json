@@ -27,6 +27,7 @@
   },
   "homepage": "https://github.com/haoyubihai/haoyubihai.github.io#readme",
   "dependencies": {
-    "jquery": "^3.4.1"
+    "jquery": "^3.4.1",
+    "vue": "^2.6.10"
   }
 }

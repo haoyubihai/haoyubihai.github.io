@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Vue</title>
+    <script src="../../../js/vue.js"></script>
+    <style type="text/css">
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        div{
+            float: left;
+            padding: 20px;
+            margin: 10px 10px;
+            height: 50px;
+            border: 1px solid #009;
+        }
+    </style>
+</head>
+<body>
+<div></div>
+<div class="box1"></div>
+<div id="box2">{{message}}</div>
+<div id="app-2"><span v-bind:title="message">鼠标悬停看到此处绑定的提示消息</span></div>
+<div id="app-3"><p v-if = "seen">现在你看到我了</p></div>
+<div id="app-4"><ol><li v-for = "todo in todos">{{todo.text}}</li></ol></div>
+<div id="app-5"><p>{{message}}</p>
+<button v-on:click="reverseMessage" style="background: #0f0">反转消息</button></div>
+<div id="app-6"><p>{{message}}</p><input v-model="message"></div>
+<div id="app-7"><ol><todo-item v-for="item in widgets" v-bind:todo="item" v-bind:key="item.id"></todo-item></ol></div>
+</body>
+<script src="js/app-vue.js">
+</script>
+</html>
