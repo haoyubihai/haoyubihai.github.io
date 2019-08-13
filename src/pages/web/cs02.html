@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
+        *{margin: 0px;
+            padding: 0px;}
         body {
             margin: 0 auto;
             width: 80%;
@@ -193,8 +195,9 @@ input img td
         font-size: 20px;
         text-decoration: none;
     }
-    .nav_n a:hover{
-         font-size: 30px;
+
+    .nav_n a:hover {
+        font-size: 30px;
         background-color: red;
     }
 </style>
@@ -208,24 +211,177 @@ input img td
 <p>
 <ol>
     <li>CSS 层叠性：如果样式冲突 ，就近原则</li>
-    <li>继承性 text-  font- line- color </li>
+    <li>继承性 text- font- line- color</li>
     <li>优先级
         <ul>
             <li>优先级 !important&gt;行内样式&gt;id选择器&gt;伪类选择器==类选择器&gt;标签选择器</li>
             <li>优先级叠加（权重叠加）
                 <ul>
-                    <li>div ul li   0002</li>
+                    <li>div ul li 0002</li>
                     <li>.nav ul li 0012</li>
                     <li>a:hover 0011</li>
-                    <li>.nav a  0011</li>
-                    <li>#nav p  0101</li>
-                </ul></li>
+                    <li>.nav a 0011</li>
+                    <li>#nav p 0101</li>
+                </ul>
+            </li>
             <li>继承的权重为 0000</li>
-        </ul></li>
-</ol></p>
-<div>
-    <p>wwwwwwwwwwwwwwwwwwwwww</p>
+        </ul>
+    </li>
+</ol>
+</p>
+<p>border=0 没有边框</p>
+
+
+<style>
+    table {
+        width: 700px;
+        height: 300px;
+        border: 1px solid #00ff00;
+        border-collapse: collapse;
+    }
+
+    td {
+        text-align: center;
+        border: 1px solid #00ff00;
+    }
+</style>
+<table cellpadding="0" cellspacing="0">
+    <tr>
+        <td>1111</td>
+        <td>1111</td>
+        <td>1111</td>
+        <td>1111</td>
+        <td>1111</td>
+    </tr>
+    <tr>
+        <td>1111</td>
+        <td>1111</td>
+        <td>1111</td>
+        <td>1111</td>
+        <td>1111</td>
+    </tr>
+    <tr>
+        <td>1111</td>
+        <td>1111</td>
+        <td>1111</td>
+        <td>1111</td>
+        <td>1111</td>
+    </tr>
+    <tr>
+        <td>1111</td>
+        <td>1111</td>
+        <td>1111</td>
+        <td>1111</td>
+        <td>1111</td>
+    </tr>
+    <tr>
+        <td>1111</td>
+        <td>1111</td>
+        <td>1111</td>
+        <td>1111</td>
+        <td>1111</td>
+    </tr>
+</table>
+<p>外边距合并,垂直盒子，以最大的边距为准</p>
+
+<style>
+    .ww {
+        width: 100px;
+        height: 100px;
+        margin: 30px;
+        background-color: #2b542c;
+    }
+</style>
+
+<div class="ww"></div>
+<div class="ww"></div>
+<hr>
+<p>嵌套盒子合并 ,
+<ul>
+    <li>给父盒子设置1px 边框，设置padding 1px</li>
+    <li>overflow: hidden;</li>
+</ul></p>
+
+<style>
+    .parent{
+
+        width: 100px;
+        height: 100px;
+        background-color: #ff0;
+        /*border: 1px solid #ff0;*/
+        /*padding: 1px;*/
+        overflow: hidden;
+    }
+    .son{
+        margin-top:20px;
+        width: 50px;
+        height: 50px;
+        background-color: #f00;
+    }
+</style>
+<div class="parent">
+    <div class="son"></div>
 </div>
+
+<ul>
+    <li>没有宽度，padding 不影响</li>
+    <li>设置box-sizing:border-box 可以不影响</li>
+</ul>
+<hr>
+<p>demo</p>
+<style>
+    .search{
+        width: 238px;
+        height: 294px;
+        border: 1px solid grey;
+        border-top: 3px solid orange;
+        box-shadow: 2px 3px 3px 3px #00ff00  inset,2px 3px 3px 3px #ff0;
+    }
+    .search img{
+        margin: 7px 0 0 8px;
+        width: 218px;
+        height: 160px;
+    }
+    .title-n{
+        height: 35px;
+        line-height: 35px;
+        border-bottom: 1px solid grey;
+        padding-left: 12px;
+        font-size: 16px;
+    }
+    .search ul{
+        list-style: none;
+        margin-left: 8px;
+    }
+    .search ul li{
+        font-size: 12px;
+        color: #666;
+        height: 26px;
+        padding-left: 10px;
+    }
+</style>
+<div class="search">
+    <div class="title-n">搜索趣图</div>
+    <img src="../../../photos/portfolio.jpg" alt="">
+    <ul>
+        <li>看家乐福控件的发</li>
+        <li>打咯了毒奶粉了是</li>
+        <li>拉低来得及看到了</li>
+    </ul>
+</div>
+<hr>
+<p>浮动</p>
+
+<ol>
+    <li>块级元素在一行显示 1：diplay:inline-block 有空隙  2：设置浮动</li>
+    <li>left 左浮动 right右浮动  none 不浮动</li>
+    <li>不加浮动 自上而下的标准流</li>
+    <li>如果一个盒子里有一个盒子浮动，其它必须都加float 才会显示一行</li>
+    <li>如果给块级元素，行内元素添加浮动 ，则块级元素会具有行内块儿的特性（可以一行放多个，有宽度，高度，盒子的大小根据内容决定）</li>
+    <li>清除浮动 clear:boten ;overflow:hidden; :after{ clear:both,visiblity:hiddden ;display:block}</li>
+
+</ol>
+
 <div class="empty" style="height: 600px"></div>
 </body>
 </html>
