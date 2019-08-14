@@ -382,6 +382,73 @@ input img td
 
 </ol>
 
+<hr>
+<p>定位</p>
+边偏移+定位
+<ol>
+    <li>边偏移 ： left,right,top,bottom</li>
+    <li>定位模式：
+        <ul>
+            <li>static 默认 对于边偏移无效 一般用来清除定位</li>
+
+            <li>absolute 绝对定位 完全脱标，不占有位置<p>如果父控件没有定位，则以浏览器坐上角定位</p><p>子绝父相</p><br>
+            <h4>如何居中？</h4>
+                <p>加了绝对定位的盒子， margin :0 auto  失效</p>
+                <p>需要经过计算 换算为 left,right,bottom,top 设置
+                <ul>
+                    <li>left:50% margin-left:-50px</li>
+                </ul></p>
+            </li>
+            <li>relative 相对定位 相对于自己左上角移动，原来的位置继续占有 <p>子绝父相</p></li>
+            <li>fixed</li>
+        </ul></li>
+    <li></li>
+</ol>
+<style>
+    .position   div{
+        width: 100px;
+        height: 100px;
+        background-color: #ff0000;
+    }
+    .position div:nth-child(2){
+        background-color: #1a87b7;
+        position: relative;
+        top: 50px;
+        left: 50px;
+    }
+
+    .position—a{
+        position: relative;
+    }
+    .position—a  div{
+        width: 100px;
+        height: 100px;
+        background-color: #ff0000;
+    }
+
+    .position-a div:first-child{
+
+    }
+    .position—a div:last-child{
+        background-color: #2daae1;
+        position: absolute;
+        top: 50px;
+        left: 50px;
+    }
+</style>
+<p>相对定位</p>
+<div class="position">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+</div>
+
+<p>绝对定位</p>
+<div class="position—a">
+    <div>绝对定位</div>
+    <div>2</div>
+</div>
+
 <div class="empty" style="height: 600px"></div>
 </body>
 </html>
