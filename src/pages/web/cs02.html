@@ -400,7 +400,7 @@ input img td
                 </ul></p>
             </li>
             <li>relative 相对定位 相对于自己左上角移动，原来的位置继续占有 <p>子绝父相</p></li>
-            <li>fixed</li>
+            <li>fixed 位置只能相对于浏览器，完全投标，不占位置，固定定位的盒子要设置宽，高</li>
         </ul></li>
     <li></li>
 </ol>
@@ -435,6 +435,14 @@ input img td
         top: 50px;
         left: 50px;
     }
+    .position_d{
+        position: static;
+
+    }
+    .position_d img{
+        width: 1100px;
+        margin-top:80px;
+    }
 </style>
 <p>相对定位</p>
 <div class="position">
@@ -448,7 +456,28 @@ input img td
     <div>绝对定位</div>
     <div>2</div>
 </div>
+<div class="position_d">
+    <img src="../../../photos/position_d.png" alt="">
+</div>
+<hr>
+<p>显示隐藏元素</p>
+<div class="display">
+    <ul>
+        <li>display:none  隐藏元素，不保留位置</li>
+        <li>display:block 显示为块元素</li>
+        <li>visibility:hidden 隐藏元素 ，保留位置</li>
+        <li>visibility:visible 显示元素 </li>
+       </ul>
+</div>
 
+<hr>
+<p>overflow</p>
+<ul>
+    <li>visible 默认</li>
+    <li>auto  自动，超出显示滚动条，不超出不显示</li>
+    <li>scroll  一直显示滚动条</li>
+    <li>hidden  超出后隐藏 ，切个掉</li>
+</ul>
 <div class="empty" style="height: 600px"></div>
 </body>
 </html>
