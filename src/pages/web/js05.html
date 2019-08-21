@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../../../js/jquery.min.js"></script>
+    <style>
+        img{
+            margin-top: 20px;
+            display: block;
+            width: 200px;
+            height: 200px;
+        }
+        .ddc{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+        div{
+            width: 100px;
+            height: 100px;
+            border: 1px solid #000;
+        }
+
+    </style>
+    <script>
+        $(function () {
+            // $("div").eq(0).prop("demo","aa11");
+            // $("div").eq(1).prop("demo","aa22");
+            //
+            // console.log($("div").prop("demo"));
+            // console.log($("div").prop("class"));
+            // $(".div2").prop("class","box0");
+
+            var  btn =document.getElementsByTagName("button");
+            btn[0].onclick=function () {
+                // $(".div1").addClass("ddc");
+                $(".div1").toggleClass("ddc");
+            };
+
+            $(".div2").html("<p> pppp</p>");
+            $(".div3").text("<p> pppp</p>");
+            $("input").val("jjjjjjjjjjj");
+            $(".div4").css("width","200px").css("background","red");
+            $(".div5").css({
+                width:"50px",
+                height:"50px"
+            })
+        });
+    </script>
+
+</head>
+<body>
+<div class="div5" name="111">5</div>
+<div class="div4" name="111">4</div>
+<div class="div1" name="111"></div>
+<div class="div2" name="222"></div>
+<div class="div3" name="222"></div>
+<input type="text">
+<button id="btn">切换图片</button>
+<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1566402727866&di=8628761030d7770b534d6f04f00bfd6b&imgtype=0&src=http%3A%2F%2Fjn.android.tedu.cn%2Fimg%2F201702%2F1487152558692.png" alt="">
+</body>
+</html>
