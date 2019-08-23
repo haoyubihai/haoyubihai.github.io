@@ -16,7 +16,7 @@ $(function () {
 
 		$('html, body').stop().animate({
 			scrollTop: $($anchor.attr('href')).offset().top
-		}, 1500, 'easeInOutExpo');
+		}, 1000, 'easeInOutExpo');
 
 		event.preventDefault();
 	});
@@ -28,7 +28,7 @@ $(function () {
 		$affected.each(function(i) {
 			if (parseInt($(this).data('runit'))) {
 				$(this).countTo({
-					speed: 3000,
+					speed: 2000,
 					refreshInterval: 50
 				});
 				$(this).data('runit', "0");
