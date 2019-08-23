@@ -20,7 +20,7 @@ $.getJSON("../kotlin/asset/kotlin-content.json","",function (data) {
             $(".ul_content").append($item);
         })
 
-        $(".ul_content").delegate("#ul_content","click",function () {
+        $(".ul_content").delegate("#id-author","click",function () {
             var $index = $(this).parents('#li_item').index();
             alert($index)
         })
