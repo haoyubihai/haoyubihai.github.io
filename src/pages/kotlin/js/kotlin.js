@@ -18,9 +18,11 @@ $.getJSON("../kotlin/asset/kotlin-content.json","",function (data) {
                 "                </div>\n" +
                 "            </li>");
             $(".ul_content").append($item);
-            $("#id-author").click(function () {
-                console.log($(this).parents('#li_item').index());
-            })
+        })
+
+        $("#id-author").click(function () {
+            var $index = $(this).parents('#li_item').index();
+            alert($index)
         })
     })
 })
