@@ -22,7 +22,7 @@ $.getJSON("../kotlin/asset/kotlin-content.json","",function (data) {
 
         $(".ul_content").delegate("#id-author","click",function () {
             var $index = $(this).parents('#li_item').index();
-            alert(data.data[$index].title)
+            window.location.href = data.data[$index].author_url;
         })
     })
 })
