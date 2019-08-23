@@ -23,7 +23,9 @@ $.getJSON("../kotlin/asset/kotlin-content.json","",function (data) {
         $(".ul_content").delegate("#id-author","click",function () {
             var $index = $(this).parents('#li_item').index();
             // window.location.href = data.data[$index].author_url;
+            alert(data.data[$index].author_url);
             window.location.href = "http://www.baidu.com";
+            return false
         })
     })
 })
