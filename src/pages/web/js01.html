@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../../../js/jquery-3.4.1.js"></script>
+    <script>
+        $(function () {
+
+        });
+    </script>
+    <style type="text/css">
+        body {
+            color: #292929;
+            line-height: 30px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+<div></div>
+<div id="div1"></div>
+<ol>
+    <li>元素的js会等到DOM元素加载完毕，并且图片也加载完毕后才会执行；jQuery 会等到DOM元素加载完毕，但不会等到图片加载完毕就会执行。</li>
+    <li>原生的js如果编写了多个入口函数，后面编写的会覆盖前面的；jquery 编写多个入口函数，后面的不会覆盖前面的。</li>
+    <li>jQuery.noConflict() 释放$,必须写在其它jQuery 代码之前,之后不能再用$</li>
+    <li>jQuery.noConflict() 自定义访问符号: var nn = jQuery.noConflict()</li>
+    <li>$(); 表示调用jQuery的核心函数
+        <ul>
+            <li>接收一个函数</li>
+            <li>接收一个字符串</li>
+            <li>接收一个字符串选择器 $(".box1") $("#box1")</li>
+            <li>接收一个代码片段 $("&lt;p&gt;段落&lt;/p&gt;")</li>
+            <li>接收一个DOM元素 var $span = $(span)</li>
+        </ul>
+    </li>
+    <li>jQuary 就是一个伪数组</li>
+    <li>jQuary 的 each()可以遍历数组和伪数组</li>
+    <li>jQuary 的 each() map()可以遍历数组和伪数组
+        <ul>
+            <li> each 静态方法 返回遍历的对象，map 返回空数组</li>
+            <li> each 不可以对遍历的数组处理，map 可以对遍历的数组处理，生成一个新的数组</li>
+        </ul>
+    </li>
+    <li>$.holdReady(true) 暂停ready事件的执行；$.holdReady(false)恢复ready事件</li>
+    <li>$(".scoll").scrollTop() 获取滚动的距离</li>
+    <li>$(".scoll").scrollTop(300) 设置滚动的距离</li>
+    <li>$("body").scrollTop()+$("html").scrollTop() 考虑兼容性 获取网页滚动的距离</li>
+    <li>$("html,body").scrollTop(300) 考虑兼容性要设置body 设置网页滚动的距离</li>
+    <li>绑定事件
+        <ul>
+            <b><i> eventName(fn)</i></b>
+            <li>$("button").click(function(){})</li>
+            <b><i>on(eventName,fn)</i></b>
+            <li>$("button").on("click",function(){})</li>
+        </ul>
+
+        移除事件
+        <ul>
+            <li>$("button").off() 移除所有事件</li>
+            <li>$("button").off("click") 移除click事件</li>
+            <li>$("button").off("click"，test1) 移除click事件的 test1事件</li>
+        </ul>
+    </li>
+    <li>
+        事件冒泡和默认行为
+        <ul>
+            <li>事件从下级到上级向上传递</li>
+            <li>阻止事件冒泡
+                <ul>
+                    <b><i>将以下事件放在子元素方法内部</i></b>
+                    <li>return false</li>
+                    <li>event.stopPropagation()</li>
+                </ul>
+            </li>
+            <li>阻止默认行为 比如form表单设置 submit 提交
+                <ul>
+                    <li>return false</li>
+                    <li>event.preventDefault()</li>
+                </ul>
+            </li>
+            <li>自动触发事件行为
+                <ul>
+                    <b><i>会有事件冒泡行为，还会触发默认行为 <span style="text-decoration:underline;background-color: #cecece">注意：a的click例外，不能触发默认a的跳转行为，可以通过设置a的子元素的自动点击事件，来触发a的默认跳转行为</span></i></b>
+                    <li>$(".father").trigger("click")</li>
+                    <b><i>不会触发事件冒泡行为，不会触发按钮的默认行为</i></b>
+                    <li>$(".father").triggerHandler("click")</li>
+                    <li>如果要触发自定义事件，自定义事件要通过on来绑定，必须通过trigger来触发，如 $("son").on("myClick",function(){}) ;
+                        $("son").trigger("myClick")
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>事件命名空间 通过 on 绑定，通过trigger 触发
+        <ul>
+            <li>$(".son").on("click.zhangSan",function(){}) 通过 trigger 来触发事件</li>
+            <li>同时会触发父元素相同命名空间的函数</li>
+
+        </ul>
+    </li>
+    <li>事件委托
+
+        <ul>
+            <b><i>找到一个已加载元素，添加代理事件</i></b>
+            <li>$("ul").delegate("li","click",function(){})</li>
+        </ul>
+    </li>
+    <li>移入移出事件
+        <ul>
+            <li> mouseover/mouseout 事件，子元素被移入移出会触发父元素事件； 可以用mouseenter/mouseleaver 在移入子元素不触发父元素事件</li>
+            <li> $(".father").hover(fn1,fn2) 同时监听鼠标移入移出事件</li>
+            <li> $(".father").hover(fn) 同时监听鼠标移入移出事件</li>
+        </ul>
+    </li>
+    <li>$(this).siblings() 找到当前元素的其它兄弟元素</li>
+    <li>监听网页的滚动 $(window).scroll(function(){})， 获取网页滚动的偏移位 $("html,body").scrollTop()</li>
+    <li>$(this).children(".sub") 找到class="sub"的子元素</li>
+    <li> 动画
+        <ul>
+            <li>$(this).show() .hide() 显示隐藏 toggle()切换</li>
+            <li>滑动动画 $("div").slideDown(1000,fn) 展开, slideUp(1000,fn) 收起</li>
+            <li>在需要执行动画时，先stop(),再执行；$(this).children(".sub").stop() 找到class="sub"的子元素,停止动画</li>
+            <li>fadeIn(time,fn) 淡入，fadeOut(time,fn) 淡出，fadeToggle(time,fn) 淡入淡出切换，fadeTo(time,0.6,fn) 淡入到0.6</li>
+            <li>队列动画$(".ad").stop().slideDown(100).fadeOut(100).fadeIn(100)</li>
+            <li>.animate({width:500,height 500},time,"linear"，fn) 自定义动画</li>
+            <li> 累加属性 .animate({width:"+100",height:"+100"},time,"linear"，fn) 自定义动画</li>
+            <li> 关键字 .animate({width:"toggle"},time,"linear"，fn) 自定义动画</li>
+            <li> .delay(1000) 延迟动画执行</li>
+            <li> stop()停止动画
+                <ul>
+                    <li>stop()立即停止当前动画，继续执行后续的</li>
+                    <li>stop(false)立即停止当前动画，继续执行后续的</li>
+                    <li>stop(false,false)立即停止当前动画，继续执行后续的</li>
+                    <li>stop(true)立即停止当前和后续动画</li>
+                    <li>stop(true,false)立即停止当前和后续动画</li>
+                    <li>stop(false,true)立即完成当前动画，继续执行后续动画</li>
+                    <li>stop(true,true)立即完成当前动画，并停止后续动画</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>$("li).each(fn) 遍历</li>
+    <li>添加节点
+        <ul>
+            <li>append(content|fn) 添加到指定元素内部的最后一个节点 $("ul").append($li)</li>
+            <li>appendTo(content) 添加到指定元素内部的最后一个节点 ，调用方式不一样 $("li").appendTo("ul")</li>
+            <li>prepend(content|fn)添加到指定元素内部的最前面</li>
+            <li>prependTo(content) 添加到指定元素内部的最前面</li>
+            <li>after(content|fn) 添加到指定元素外部的后面</li>
+            <li>insertAfter(content|fn) 添加到指定元素外部的后面</li>
+            <li>before(content|fn) 添加到指定元素外部的前面</li>
+            <li>insertBefore(content|fn) 添加到指定元素外部的前面</li>
+        </ul>
+    </li>
+    <li>删除节点
+        <ul>
+            <li>$("div").remove() 删除指定元素</li>
+            <li>$("div").remove(".item") 删除指定元素 中class="item"的元素</li>
+            <li>$("div").empty() 删除指定元素内容和子元素，本身不会被删除</li>
+
+        </ul></li>
+    <li>替换节点
+        <ul>
+            <li>replaceWith(content|fn)</li>
+            <li>.replaceAll(content|fn)</li>
+        </ul>
+    </li>
+    <li>复制节点
+        <ul>
+            <li>浅复制 只复制元素，不复制事件 clone(false) </li>
+            <li>深复制 复制元素，同时复制事件 clone(true)</li>
+        </ul></li>
+
+    <li>setInterval(fn，time) 开启定时器,clearInterval(timer) 关闭定时器</li>
+    <li>one() 点击事件处理一次</li>
+</ol>
+</body>
+
+<script>
+    //  $(document).ready(function () {
+    //     alert("hello1")
+    //  });
+    //  $(document).ready(function () {
+    //     alert("hello2")
+    //  });
+    //    $(function () {
+    //        alert("")
+    //    });
+    //    function Aclass() {
+    //    }
+    //    Aclass.staticMethod = function () {
+    //        alert("static method")
+    //    };
+    //
+    //    Aclass.staticMethod();
+    //    Aclass.prototype.instanceMethod = function () {
+    //        alert("instanceMethod");
+    //    }
+    //    var a = new Aclass();
+    //    a.instanceMethod();
+
+    var arr = [1, 2, 3, 4, 5, 5, 6];
+    $.each(arr, function (index, v) {
+        console.log(index, v)
+    })
+
+
+</script>
+</html>

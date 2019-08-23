@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../../../js/jquery-3.4.1.js"></script>
+</head>
+<body>
+<button></button>
+<script>
+
+
+    var arr = [1, 2, 3, 4, 5];
+    var obj = {1: 2, 3: 4, 5: 3, le: 6};
+    arr.map(function (v, index, array) {
+        console.log(index, v, array)
+    });
+
+    $.map(obj, function (v, index) {
+        console.log(index, v);
+    });
+    var str = "           去除空格 trim           ";
+    console.log("______" + str + "________")
+    console.log("_____" + $.trim(str) + "______")
+    //判断传入的是不是window对象
+    console.log($.isWindow(arr))
+
+    var  aa = function a() {
+
+    }
+    console.log("arr isArray "+$.isArray(arr))
+    console.log("obj isArray " +$.isArray(obj))
+    console.log("obj isFunction "+$.isFunction(obj))
+    console.log("aa isFunction "+ $.isFunction(aa))
+</script>
+</body>
+</html>
