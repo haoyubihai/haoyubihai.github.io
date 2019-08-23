@@ -3,14 +3,20 @@
     {
       "title":"Publishing your Android, Kotlin or Java library to mavenCentral",
       "summary":"Once you’ve requested your group id and generated all of the signing keys — you want your library to be uploaded as an aar or jar to mavenCentral.",
-      "author":"kotlin",
-      "time":"2019.08.23"
+      "author":"Niklas Baudy",
+      "author_url":"https://medium.com/@vanniktech",
+      "time":"2018.06.23",
+      "url":"https://medium.com/@vanniktech/publishing-your-android-kotlin-or-java-library-to-mavencentral-e22f343b9659",
+      "carver":"https://miro.medium.com/max/4056/1*wUMHYlho9ViMlwxb6PoPbQ.png"
     },
     {
       "title":"All my books in AR",
       "summary":"I love reading books. I also love to track what I’ve read. Goodreads is a probably world’s largest community of book lovers and I use it for more than 8 years now. ",
-      "author":"kotlin in AR",
-      "time":"2019.08.23"
+      "author":"Andrey Suvorov",
+      "author_url":"https://medium.com/@intmainreturn00",
+      "time":"2019.05.24",
+      "url":"https://medium.com/@intmainreturn00/goodreads-api-from-android-with-kotlin-fd8c2c7338d8",
+      "carver":"https://miro.medium.com/max/708/1*5ODaoHWVFc_8cbCLY2bGyA.png"
     }
   ]
 }
