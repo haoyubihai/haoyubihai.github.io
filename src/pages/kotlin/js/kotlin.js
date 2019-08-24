@@ -13,7 +13,7 @@ $.getJSON("../kotlin/asset/kotlin-content.json","",function (data) {
                 "                                <div class='i-time'>"+content.time+"</div>\n" +
                 "                            </div>\n" +
                 "                        </div>\n" +
-                "                        <div class='item_r'><img src="+content.carver+" alt='></div>\n" +
+                "                        <div class='item_r'><img src="+content.carver+" /></div>\n" +
                 "                    </a>\n" +
                 "                </div>\n" +
                 "            </li>");
