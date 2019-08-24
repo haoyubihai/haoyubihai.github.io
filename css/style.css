@@ -1145,6 +1145,10 @@ h6 {
     transform: rotate(360deg) scale(1.8);
 }
 
+.team{
+    padding: 100px 0;
+}
+
 .features-desc {
     padding: 100px 0;
     background-color: #fcfcfc;
