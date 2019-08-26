@@ -13,8 +13,8 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://jrhlive.com/blog/jrh-blog/
-root: /blog/jrh-blog/
+url: http://jrhlive.com/
+root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 
@@ -79,5 +79,5 @@ theme: landscape
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/haoyubihai/jrhblog.git
-  branch: dev
+  repo: https://github.com/jiarh-live-life/jiarh-live-life.github.io.git
+  branch: master
