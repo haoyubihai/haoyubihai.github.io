@@ -15,11 +15,11 @@ body{
 }
 .content {
     margin: 0;
-    padding: 0;
+    padding-bottom: 15px;
     width: 80%;
-    height: 100%;
     margin: 0 auto;
     box-sizing: border-box;
+    overflow: hidden;
 
 }
 
@@ -48,18 +48,21 @@ ol, ul > li {
     width: 152px;
     height: 45px;
     background: url("../images/logo-live-white.png") no-repeat;
-    margin: 10px 30px;
+    margin: 10px 0;
 }
 
-.t-kotlin {
+.t-title {
     float: right;
     height: 65px;
     color: #fff;
-    margin-right: 30px;
+
 }
+
+/*头部结束*/
+
+/*展示列表项开始*/
 .item {
     margin-top: 15px;
-    height: 130px;
     padding-top: 15px;
     padding-bottom: 10px;
     border-radius: 5px;
@@ -125,4 +128,83 @@ ol, ul > li {
     font-size: 12px;
     height: 20px;
     line-height: 20px;
+}
+/*展示列表项结束*/
+
+/*右侧筛选模块开始*/
+.category{
+    width: 100%;
+    margin-top: 15px;
+
+}
+.category  .c-important{
+    height: 120px;
+    background-color: #292929;
+    color: #ffffff;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 120px;
+    font-size: 35px;
+
+
+}
+.category .c-category {
+    margin-top: 20px;
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 30px;
+    box-shadow: 0px 1px 1px #cecece;
+}
+.c-category .title-info{
+    height: 45px;
+    font-size: 16px;
+    padding-left: 9px;
+    line-height: 45px;
+    color: #000000;
+    border-bottom: 1px solid #ff4d3a;
+}
+.c-category .category-content{
+    padding: 20px 0 0 20px;
+}
+.c-category .category-content ul li{
+    list-style: none;
+    float: left;
+    border: 1px solid #e1e1e1;
+    padding: 6px 8px;
+    font-size: 12px;
+    color: #383838;
+    margin-right: 14px;
+    margin-top: 10px;
+}
+.category #c-blog{
+    padding-bottom: 0px;
+
+    box-shadow: 0px 1px 1px #cecece;
+}
+.c-category .category-blog ul li {
+    padding-bottom: 3px;
+    height: 40px;
+    font-size: 12px;
+    line-height: 40px;
+    padding-left: 20px;
+    color: #666666;
+    border-bottom: 1px solid #e1e1e1;
+
+}
+.c-category .category-blog ul li:last-child{
+    padding-bottom: 0px;
+    border-bottom: none;
+}
+
+/*右侧筛选模块结束*/
+
+footer{
+    clear: both;
+    margin-top: 300px;
+    background-color: #292929;
+    height: 100px;
+    width: 100%;
+    color: #ffffff;
+    text-align: center;
+    line-height: 100px;
 }

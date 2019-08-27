@@ -20,26 +20,7 @@ $(function () {
 
 		event.preventDefault();
 	});
-	/*
-	* Fun Fact with Count Animation
-	*/
-	$('.st-ff-count').appear();
-	$(document.body).on('appear', '.st-ff-count', function(e, $affected) {
-		$affected.each(function(i) {
-			if (parseInt($(this).data('runit'))) {
-				$(this).countTo({
-					speed: 2000,
-					refreshInterval: 50
-				});
-				$(this).data('runit', "0");
-			};
 
-		});
-	});
-
-	$('[data-toggle="tooltip"]').tooltip();
-
-	
 
 
     function home_height () {
@@ -87,39 +68,6 @@ $(function () {
 	    }
 	});
 
-
-	
-
-
-	$(".testimonials-carousel ul").owlCarousel({
-        items: 1,
-        navigation: false,
-        pagination: true,
-        singleItem:true,
-        autoPlay: true,
-        navigationText: ['<i class="ct-etp etp-arrow-left7"></i>', '<i class="ct-etp etp-arrow-right8"></i>'],
-        transitionStyle: "backSlide"
-    });
-
-    $('.clients-carousel').owlCarousel({
-    	items: 5,
-    	autoPlay: true,
-    	pagination: false
-    });
-
-    ////// mailchimp //////
-    $(".subscribe-form").ajaxChimp({
-        callback: mcCallback,
-        url: "http://cantothemes.us8.list-manage2.com/subscribe/post?u=37a0cb83e98c8633253ad0acd&id=03d8ef0996" // Replace your mailchimp post url inside double quote "".  
-    });
-
-    function mcCallback (res) {
-		if(res.result === 'success') {
-			$('.subscribe-result').html('<i class="pe-7s-check"></i>' + res.msg).delay(500).slideDown(1000).delay(10000).slideUp(1000);
-		}else if(res.result === 'error'){
-			$('.subscribe-result').html('<i class="pe-7s-close-circle"></i>' + res.msg).delay(500).slideDown(1000).delay(10000).slideUp(1000);
-		}
-	}
 
 
 	/*
